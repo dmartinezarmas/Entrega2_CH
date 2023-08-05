@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "average";
+    src: url(../assets/font/AverageSans-Regular.ttf);
+}
+/* ESTILO GENERAL PARA EL FONDO DE CADA PÁGINA */
+html{
+    background-image: url("https://clipground.com/images/bandera-de-mexico-png-2.png");
+    background-size: contain;
+}
+body{
+    background-color: rgba(250, 235, 215, 0.479);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "average"
+}
+/* ESTILO GENERAL PARA LA CEBECERA DE CADA PÁGINA */
+.navbar{
+    display: none;
+}
+@media(max-width: 615px){
+    .navbar{
+        display: initial;
+    }
+    header{
+        display: none;
+    }
+}
+/* 
+border: 3px solid #FBD85D;
+background-color: #3C486B;
+color:#FAE392 
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-family: 'Bebas Neue', sans-serif;
+
+*/
+
+
+
+/* ESTILOS PARA EL PIE DE PAGINA */
+#boton_form{
+    width: 80px;
+    height: 25px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border-bottom:ridge
+}
+#boton_pie{
+    width: 100px;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    border-bottom: outset;
+}
