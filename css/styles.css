@@ -7,6 +7,34 @@
     font-family: "average";
     src: url(../assets/font/AverageSans-Regular.ttf);
 }
+nav{
+    height: 70%;
+    display: grid;
+    grid-template-rows: 0.25fr 3fr 2fr; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "section1 section2"
+      "section1 section2"
+      "seleccion seleccion"
+}
+#title {
+    background-color: aqua;
+    grid-area: title;
+ }
+#section1 {
+    background-color: blueviolet;
+    grid-area: section1;
+ }
+#section2 {
+    background-color: yellow;
+    grid-area: section2;
+ }
+#seleccion {
+    background-color: tomato;
+    grid-area: seleccion;
+ }
+
 /* ESTILO GENERAL PARA EL FONDO DE CADA PÁGINA */
 html{
     background-image: url("https://clipground.com/images/bandera-de-mexico-png-2.png");
@@ -57,3 +85,7 @@ font-family: 'Bebas Neue', sans-serif;
     border-radius: 15px;
     border-bottom: outset;
 }
+
+
+
+
