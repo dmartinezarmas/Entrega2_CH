@@ -3,38 +3,11 @@
     margin: 0;
     padding: 0;
 }
+
 @font-face {
     font-family: "average";
     src: url(../assets/font/AverageSans-Regular.ttf);
 }
-nav{
-    height: 70%;
-    display: grid;
-    grid-template-rows: 0.25fr 3fr 2fr; 
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "title title"
-      "section1 section2"
-      "section1 section2"
-      "seleccion seleccion"
-}
-#title {
-    background-color: aqua;
-    grid-area: title;
- }
-#section1 {
-    background-color: blueviolet;
-    grid-area: section1;
- }
-#section2 {
-    background-color: yellow;
-    grid-area: section2;
- }
-#seleccion {
-    background-color: tomato;
-    grid-area: seleccion;
- }
-
 /* ESTILO GENERAL PARA EL FONDO DE CADA PÁGINA */
 html{
     background-image: url("https://clipground.com/images/bandera-de-mexico-png-2.png");
@@ -47,29 +20,349 @@ body{
     font-family: "average"
 }
 /* ESTILO GENERAL PARA LA CEBECERA DE CADA PÁGINA */
+header{
+    border: 3px solid #176B87;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #001C30;
+    text-align: center;
+}
+header h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    color: blanchedalmond;
+}
+header li{
+    list-style-type: none;
+    font-family: 'Bebas Neue', sans-serif;
+}
+header a{
+    text-decoration: none;
+    color: #64CCC5
+}
+header a:hover{
+    color: white;
+}
+ /* ESTILOS PARA EL GRID DE INDEX */
+ nav{
+    height: 70%;
+    display: grid;
+    grid-template-rows: 0.25fr 3fr 2fr; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "section1 section2"
+      "section1 section2"
+      "seleccion seleccion"
+}
+#title {
+    text-align: center;
+    grid-area: title;
+    background-color: #64ccc5b6;
+    border: 3px solid #176B87;
+    border-radius: 10px;
+    padding: 1rem;
+}
+#section1 {
+    text-align: center;
+    background-color: #64ccc5b6;
+    border: 3px solid #176B87;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    grid-area: section1;
+}
+#section2 {
+    text-align: center;
+    background-color: #64ccc5b6;
+    border: 3px solid #176B87;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    grid-area: section2;
+}
+#seleccion {
+    grid-area: seleccion;
+    width: 500px;
+    font-size: x-large;
+    text-align: center;
+    border: 5px solid #176B87;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0 0 2rem 1rem;
+}
+article{
+    text-align: center;
+}
+article h3{
+    font-weight: bolder;
+}
+#video_altar{
+    display: flex;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 1rem 2rem 1rem;
+}
+#video{
+    width: 55%;
+    margin-top: 0;
+    margin: 0 1rem 0 1rem;
+}
+#video_altar p{
+    width: 40%; 
+    margin-top: 0;
+    margin: 0 1rem 0 1rem;
+}
+/* ESTILOS PARA EL GRID DE HISTORIAS */
+.nav_historia{
+    height: 70%;
+    margin: 2rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-rows: 0.25fr 0.5fr 1fr 0.25fr ; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "leyenda1 leyenda1"
+      "leyenda2 leyenda3"
+      "leyenda4 leyenda4"
+      "leyenda5 leyenda5"
+}
+.leyenda1 {
+    grid-area: leyenda1;
+    text-align: center;
+    background-color: #64ccc5b6;
+    border: 3px solid #176B87;
+    border-radius: 10px;
+ }
+.leyenda2 {
+    grid-area: leyenda2;
+    text-align: center;    
+    border: 3px solid #176B87;
+    border-radius: 10px;
+ }
+.leyenda3 {
+    grid-area: leyenda3;
+    text-align: center;
+    border: 3px solid #176B87;
+    border-radius: 10px;
+ }
+.leyenda4 {
+    grid-area: leyenda4;
+    text-align: center;
+    border: 3px solid #176B87;
+    border-radius: 10px;
+ }
+ .leyenda5 {
+    grid-area: leyenda5;
+    text-align: center;
+    margin-top: 2rem;
+    background-color: #64ccc5b6;
+    border: 3px solid #176B87;
+    border-radius: 10px;
+ }
+ /* ESTILOS PARA EL GRID FOTOS CATRINA */
+.fotos_maquillaje{
+    margin: 2rem 1rem 1rem 1rem;
+    padding: 1rem;
+    height: 50%;
+    background-color: #64ccc5b6;
+    border: 3px solid #176B87;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 0.25fr 6fr; 
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-areas:
+      "titulo_fotos titulo_fotos titulo_fotos"
+      "imagen1 imagen2 parrafo"
+}
+.titulo_fotos {
+    text-align: center;
+    grid-area: titulo_fotos;
+}
+.imagen1 {
+    grid-area: imagen1;
+}
+.imagen2 {
+    grid-area: imagen2;
+}
+.parrafo {
+    grid-area: parrafo;
+}
+ /* ESTILOS PARA EL GRID FOTOS BAILARINAS */
+ .fotos_bailarinas{
+    margin: 2rem 1rem 1rem 1rem;
+    padding: 1rem;
+    height: 50%;
+    background-color: #64ccc5b6;
+    border: 3px solid #176B87;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 0.25fr 6fr; 
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-areas:
+      "titulo_fotos titulo_fotos titulo_fotos"
+      "parrafo imagen1 imagen2"
+}
+.titulo_fotos {
+    text-align: center;
+    grid-area: titulo_fotos;
+}
+.imagen1 {
+    grid-area: imagen1;
+}
+.imagen2 {
+    grid-area: imagen2;
+}
+.parrafo {
+    grid-area: parrafo;
+}
+.fotos_personajes{
+    margin: 5rem;
+    text-align: center;
+}
+ /* ESTILOS PARA EL GRID FOTOS ALTAR */
+.fotos_altar{
+    margin: 2rem 1rem 1rem 1rem;
+    height: 50%;
+    gap: 1rem;
+    display: grid;
+    overflow: hidden;
+    grid-template-rows: 2rem repeat(2, 0.5fr) 0.5fr; 
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-areas:
+      "titulo titulo"
+      "img1 img2"
+      "img3 img4"
+      "parrafo parrafo"
+}
+.fotos_altar h3 {
+    text-align: center;
+    grid-area: titulo;
+}
+.img1 {
+    width: 100%;
+    grid-area: img1;
+    border-radius: 10px;
+}
+.img2 {
+    width: 100%;
+    grid-area: img2;
+    border-radius: 10px;
+}.img3 {
+    width: 100%;
+    grid-area: img3;
+    border-radius: 10px;
+}.img4 {
+    width: 100%;
+    grid-area: img4;
+    border-radius: 10px;
+}.fotos_altar p {
+    text-align: center;
+    grid-area: parrafo;
+}
+/* ESTILOS PARA LA PAGINA COMUNIDAD */
+.comunidad{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.comunidad h2{
+    text-align: center;
+    font-weight: bolder;
+}
+div img{
+    border-radius: 20px;
+    margin: 1rem;
+}
+/* PARA LA CEBECERA DE CADA PÁGINA EN MOBILE: index, historias y fotos */
 .navbar{
     display: none;
 }
 @media(max-width: 615px){
     .navbar{
         display: initial;
+        padding: 0.5rem;
     }
     header{
         display: none;
     }
+     /* ESTILOS PARA EL GRID DE INDEX */
+    nav{
+        grid-template-rows: 0.25fr 3fr 3fr 0.25fr; 
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "title"
+        "section1"
+        "section2"
+        "seleccion"
+    }
+    #video_altar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #video{
+        width: 90%;
+    }
+    #video_altar p{
+        width: 90%;
+    }
+    .nav_historia{
+        grid-template-rows: 0.75fr 0.5fr 0.5fr 1fr 0.5fr; 
+        grid-template-columns: 1fr;
+        text-align: center;
+        grid-template-areas:
+          "leyenda1"
+          "leyenda2"
+          "leyenda3"
+          "leyenda4"
+          "leyenda5"
+    }
+    .fotos_maquillaje{
+        grid-template-rows: repeat(4, 0.25fr); 
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        margin: 3rem;
+        grid-template-areas:
+          "titulo_fotos"
+          "imagen1" 
+          "imagen2" 
+          "parrafo"
+    }
+    .fotos_bailarinas{
+        grid-template-rows: repeat(4, 0.25fr); 
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        margin: 3rem;
+        grid-template-areas:
+          "titulo_fotos"
+          "parrafo"
+          "imagen1"
+          "imagen2"
+    }
+    .fotos_altar{
+        grid-template-rows: repeat(5, 0.25fr); 
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "titulo"
+          "img1"
+          "img2"
+          "img3"
+          "img4"
+          "parrafo"
+    }
 }
-/* 
-border: 3px solid #FBD85D;
-background-color: #3C486B;
-color:#FAE392 
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-family: 'Bebas Neue', sans-serif;
-
-*/
-
-
-
 /* ESTILOS PARA EL PIE DE PAGINA */
+#pie{
+    border: 2px solid #176B87;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    background-color:#001C30;
+    text-align: center; 
+    color:#64CCC5
+}
 #boton_form{
     width: 80px;
     height: 25px;
@@ -84,6 +377,12 @@ font-family: 'Bebas Neue', sans-serif;
     font-weight: bold;
     border-radius: 15px;
     border-bottom: outset;
+}
+#boton_pie:hover{
+    color:#64CCC5;
+    width: 7rem;
+    border-color:#64CCC5;
+    background-color: #001C30;
 }
 
 
