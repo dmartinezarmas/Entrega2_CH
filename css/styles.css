@@ -322,6 +322,9 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         "section2"
         "seleccion"
     }
+    #title{
+        margin: 1rem;
+    }
     #video_altar{
         display: flex;
         flex-direction: column;
