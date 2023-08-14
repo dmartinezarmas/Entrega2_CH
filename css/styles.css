@@ -9,12 +9,14 @@
     src: url(../assets/font/AverageSans-Regular.ttf);
 }
 /* ESTILO GENERAL PARA EL FONDO DE CADA PÁGINA */
-html{
+/* html{
+    width: fit-content;
     background-image: url("https://clipground.com/images/bandera-de-mexico-png-2.png");
     background-size: contain;
-}
+    background-repeat: repeat-y;
+} */
 body{
-    background-color: rgba(250, 235, 215, 0.479);
+    background-color:rgba(254, 255, 201, 0.733);
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: "average"
@@ -45,14 +47,13 @@ header a:hover{
     color: white;
 }
  /* ESTILOS PARA EL GRID DE INDEX */
- nav{
+ #principal{
     height: 70%;
     display: grid;
-    grid-template-rows: 0.25fr 3fr 2fr; 
+    grid-template-rows: 0.25fr 3fr 0.25fr; 
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "title title"
-      "section1 section2"
       "section1 section2"
       "seleccion seleccion"
 }
@@ -85,13 +86,17 @@ header a:hover{
 }
 #seleccion {
     grid-area: seleccion;
-    width: 500px;
+    max-width: 500px;
     font-size: x-large;
     text-align: center;
     border: 5px solid #176B87;
     border-radius: 10px;
     padding: 1rem;
-    margin: 0 0 2rem 1rem;
+    margin: 0 25rem 2rem 25rem;
+}
+#section_altar {
+    margin: 1rem;
+
 }
 article{
     text-align: center;
@@ -182,9 +187,11 @@ article h3{
     grid-area: titulo_fotos;
 }
 .imagen1 {
+    max-width: 90%;
     grid-area: imagen1;
 }
 .imagen2 {
+    max-width: 90%;
     grid-area: imagen2;
 }
 .parrafo {
@@ -194,6 +201,7 @@ article h3{
  .fotos_bailarinas{
     margin: 2rem 1rem 1rem 1rem;
     padding: 1rem;
+    overflow: hidden;
     height: 50%;
     background-color: #64ccc5b6;
     border: 3px solid #176B87;
@@ -218,6 +226,10 @@ article h3{
 .parrafo {
     grid-area: parrafo;
 }
+.main_fotos img{
+    max-width: 98%;
+    margin: 0.5rem;
+}
 .fotos_personajes{
     margin: 5rem;
     text-align: center;
@@ -229,7 +241,7 @@ article h3{
     gap: 1rem;
     display: grid;
     overflow: hidden;
-    grid-template-rows: 2rem repeat(2, 0.5fr) 0.5fr; 
+    grid-template-rows: 2rem repeat(3, 0.5fr); 
     grid-template-columns: repeat(2, 3fr);
     grid-template-areas:
       "titulo titulo"
@@ -242,20 +254,20 @@ article h3{
     grid-area: titulo;
 }
 .img1 {
-    width: 100%;
+    max-width: 95%;
     grid-area: img1;
     border-radius: 10px;
 }
 .img2 {
-    width: 100%;
+    max-width: 95%;
     grid-area: img2;
     border-radius: 10px;
 }.img3 {
-    width: 100%;
+    max-width: 95%;
     grid-area: img3;
     border-radius: 10px;
 }.img4 {
-    width: 100%;
+    max-width: 95%;
     grid-area: img4;
     border-radius: 10px;
 }.fotos_altar p {
@@ -301,19 +313,39 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-radius: 5px;
     border:3px solid #001C30;    
 }
+/* MEDIA QUERY PARA 1200px*/
+@media(max-width: 1200px){
+    .fotos_maquillaje{
+        grid-template-rows: 0.25fr 1.5fr 0.5fr; 
+        grid-template-columns: repeat(2, 3fr);
+        grid-template-areas:
+          "titulo_fotos titulo_fotos"
+          "imagen1 imagen2"
+          "parrafo parrafo"
+    }
+    .fotos_bailarinas{
+        grid-template-rows: 0.25fr 1fr 0.5fr; 
+        grid-template-columns: repeat(2, 3fr);
+        grid-template-areas:
+          "titulo_fotos titulo_fotos"
+          "imagen1 imagen2"
+          "parrafo parrafo"
+    }
+    
+}     
+
 /* PARA LA CEBECERA DE CADA PÁGINA EN MOBILE: index, historias y fotos */
-.navbar{
-    display: none;
-}
-@media(max-width: 615px){
-    .navbar{
-        display: initial;
-        padding: 0.5rem;
+@media(max-width: 740px){
+    body{
+        font-size: medium;
     }
     header{
         display: none;
     }
-     /* ESTILOS PARA EL GRID DE INDEX */
+    .navbar{
+        padding: 0.5rem;
+    }
+    /* ESTILOS PARA EL GRID DE INDEX */
     nav{
         grid-template-rows: 0.25fr 3fr 3fr 0.25fr; 
         grid-template-columns: 1fr;
@@ -327,15 +359,17 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         margin: 1rem;
     }
     #video_altar{
-        display: flex;
         flex-direction: column;
-        align-items: center;
     }
     #video{
         width: 90%;
     }
     #video_altar p{
         width: 90%;
+    }
+    #seleccion {
+        font-size: medium;
+        border: 2px solid #176B87;
     }
     .nav_historia{
         grid-template-rows: 0.75fr 0.5fr 0.5fr 1fr 0.5fr; 
@@ -351,8 +385,8 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     .fotos_maquillaje{
         grid-template-rows: repeat(4, 0.25fr); 
         grid-template-columns: 1fr;
-        padding: 2rem;
-        margin: 3rem;
+        padding: 1rem;
+        margin: 1rem;
         grid-template-areas:
           "titulo_fotos"
           "imagen1" 
@@ -362,8 +396,8 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     .fotos_bailarinas{
         grid-template-rows: repeat(4, 0.25fr); 
         grid-template-columns: 1fr;
-        padding: 2rem;
-        margin: 3rem;
+        padding: 1rem;
+        margin: 1rem;
         grid-template-areas:
           "titulo_fotos"
           "parrafo"
@@ -389,9 +423,8 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 /* ESTILOS PARA EL PIE DE PAGINA */
 #pie{
-    border: 2px solid #176B87;
-    border-radius: 5px;
-    margin: 10px;
+    border-top: 3px solid #176B87;
+    border-bottom: 3px solid #176B87;
     padding: 5px;
     background-color:#001C30;
     text-align: center; 
@@ -418,7 +451,4 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-color:#64CCC5;
     background-color: #001C30;
 }
-
-
-
 
