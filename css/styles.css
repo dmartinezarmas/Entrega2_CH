@@ -9,12 +9,6 @@
     src: url(../assets/font/AverageSans-Regular.ttf);
 }
 /* ESTILO GENERAL PARA EL FONDO DE CADA PÁGINA */
-/* html{
-    width: fit-content;
-    background-image: url("https://clipground.com/images/bandera-de-mexico-png-2.png");
-    background-size: contain;
-    background-repeat: repeat-y;
-} */
 body{
     background-color:rgba(254, 255, 201, 0.733);
     padding-top: 10px;
@@ -23,6 +17,7 @@ body{
 }
 /* ESTILO GENERAL PARA LA CEBECERA DE CADA PÁGINA */
 header{
+    display: none;
     border: 3px solid #176B87;
     border-radius: 5px;
     margin: 10px;
@@ -92,7 +87,7 @@ header a:hover{
     border: 5px solid #176B87;
     border-radius: 10px;
     padding: 1rem;
-    margin: 0 25rem 2rem 25rem;
+    margin: 0 30% 1rem 30%;
 }
 #section_altar {
     margin: 1rem;
@@ -331,7 +326,14 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
           "imagen1 imagen2"
           "parrafo parrafo"
     }
-    
+    #video_altar{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #video_altar p{
+        width: fit-content;
+    }
 }     
 
 /* PARA LA CEBECERA DE CADA PÁGINA EN MOBILE: index, historias y fotos */
@@ -346,8 +348,8 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         padding: 0.5rem;
     }
     /* ESTILOS PARA EL GRID DE INDEX */
-    nav{
-        grid-template-rows: 0.25fr 3fr 3fr 0.25fr; 
+    #principal{
+        grid-template-rows: 0.5fr 2fr 2fr 0.25fr; 
         grid-template-columns: 1fr;
         grid-template-areas:
         "title"
@@ -358,18 +360,21 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     #title{
         margin: 1rem;
     }
+    #seleccion {
+        max-width: 300px;
+        font-size: medium;
+        padding: 0.5rem;
+        margin: 0 30% 1rem 30%;
+    }
     #video_altar{
         flex-direction: column;
+        text-align: center;
     }
     #video{
         width: 90%;
     }
     #video_altar p{
         width: 90%;
-    }
-    #seleccion {
-        font-size: medium;
-        border: 2px solid #176B87;
     }
     .nav_historia{
         grid-template-rows: 0.75fr 0.5fr 0.5fr 1fr 0.5fr; 
@@ -419,6 +424,16 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         flex-direction: row;
         justify-content: center;
         flex-basis: 90%;
+    }
+}
+@media(max-width: 530px){
+    #seleccion {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        font-size: medium;
+        padding: 1rem;
+        margin: 0 20% 1rem 20%;
     }
 }
 /* ESTILOS PARA EL PIE DE PAGINA */
