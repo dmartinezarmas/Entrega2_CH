@@ -118,7 +118,7 @@ article h3{
 /* ESTILOS PARA EL GRID DE HISTORIAS */
 .nav_historia{
     height: 70%;
-    margin: 2rem;
+    margin: 4%;
     gap: 1rem;
     display: grid;
     grid-template-rows: 0.25fr 0.5fr 1fr 0.25fr ; 
@@ -131,13 +131,14 @@ article h3{
 }
 .leyenda1 {
     grid-area: leyenda1;
-    text-align: center;
+    padding: 0.5rem;
     background-color: #64ccc5b6;
     border: 3px solid #176B87;
     border-radius: 10px;
  }
 .leyenda2 {
     grid-area: leyenda2;
+    padding: 0.5rem;
     text-align: center;    
     border: 3px solid #176B87;
     border-radius: 10px;
@@ -147,12 +148,14 @@ article h3{
     text-align: center;
     border: 3px solid #176B87;
     border-radius: 10px;
+    padding: 0.5rem;
  }
 .leyenda4 {
     grid-area: leyenda4;
     text-align: center;
     border: 3px solid #176B87;
     border-radius: 10px;
+    padding: 0.5rem;
  }
  .leyenda5 {
     grid-area: leyenda5;
@@ -161,6 +164,10 @@ article h3{
     background-color: #64ccc5b6;
     border: 3px solid #176B87;
     border-radius: 10px;
+    padding: 0.5rem;
+}
+ .nav_historia img{
+    max-width: 400px;
  }
  /* ESTILOS PARA EL GRID FOTOS CATRINA */
 .fotos_maquillaje{
@@ -278,6 +285,13 @@ article h3{
     align-items: center;
     overflow: hidden;
 }
+.comunidad div{
+    text-align: center;
+}
+.fotoComunidad{
+    max-width:45%;
+    margin: 1%;
+}
 .comunidad h2{
     text-align: center;
     font-weight: bolder;
@@ -300,16 +314,16 @@ fieldset{
     border-top: 2px solid #001C30;
 }
 .menu_contacto h5{
-text-align: center;
-font-size: x-large;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #comentario:hover{
     border-radius: 5px;
     border:3px solid #001C30;    
 }
 /* MEDIA QUERY PARA 1200px*/
-@media(max-width: 1200px){
+@media (max-width: 1200px){
     .fotos_maquillaje{
         grid-template-rows: 0.25fr 1.5fr 0.5fr; 
         grid-template-columns: repeat(2, 3fr);
@@ -337,12 +351,9 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }     
 
 /* PARA LA CEBECERA DE CADA PÁGINA EN MOBILE: index, historias y fotos */
-@media(max-width: 740px){
+@media (max-width: 740px){
     body{
         font-size: medium;
-    }
-    header{
-        display: none;
     }
     .navbar{
         padding: 0.5rem;
@@ -426,7 +437,13 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         flex-basis: 90%;
     }
 }
-@media(max-width: 530px){
+@media (max-width: 530px){
+    p, li{
+        font-size: small;
+    }
+    h1, h2, h3{
+        font-size: medium;
+    }
     #seleccion {
         display: flex;
         flex-direction: column;
