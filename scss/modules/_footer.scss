@@ -1,0 +1,30 @@
+footer #pie{
+    border-top: 3px solid #176B87;
+    border-bottom: 3px solid #176B87;
+    padding: 5px;
+    background-color:rgb(0, 0, 0);
+    text-align: center; 
+    color:#055160;
+    font-weight: bold;
+    a #botonPie{
+        width: 100px;
+        height: 30px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 15px;
+        border-bottom: outset;
+        &:hover{
+            color:#64CCC5;
+            width: 7rem;
+            border-color:#64CCC5;
+            background-color: #001C30;
+        }
+        div{
+            a{
+                img{
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
