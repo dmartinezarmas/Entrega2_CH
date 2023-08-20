@@ -17,29 +17,8 @@ body{
 }
 /* ESTILO GENERAL PARA LA CEBECERA DE CADA PÁGINA */
 header{
-    display: none;
-    border: 3px solid #176B87;
-    border-radius: 5px;
-    margin: 10px;
-    background-color: #001C30;
-    text-align: center;
-}
-header h1{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: lighter;
-    color: blanchedalmond;
-}
-header li{
-    list-style-type: none;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: large;
-}
-header a{
-    text-decoration: none;
-    color: #64CCC5
-}
-header a:hover{
-    color: white;
+    border-top: 3px solid #176B87;
+    border-bottom: 3px solid #176B87;
 }
  /* ESTILOS PARA EL GRID DE INDEX */
  #principal{
@@ -116,6 +95,12 @@ article h3{
     margin: 0 1rem 0 1rem;
 }
 /* ESTILOS PARA EL GRID DE HISTORIAS */
+.musica{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2%;
+}
 .nav_historia{
     height: 70%;
     margin: 4%;
@@ -168,6 +153,7 @@ article h3{
 }
  .nav_historia img{
     max-width: 400px;
+    width: 90%;
  }
  /* ESTILOS PARA EL GRID FOTOS CATRINA */
 .fotos_maquillaje{
@@ -300,6 +286,7 @@ div img{
     border-radius: 20px;
     margin: 1rem;
 }
+/* ESTILOS PARA LA PAGINA CONTACTOS */
 .menu_contacto{
     display: flex;
     flex-direction: column;
@@ -308,6 +295,12 @@ div img{
 }
 fieldset{
     margin: 2rem 0 2rem 0;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+#comentario{
+    max-width: 99%;
 }
 .texto_maiz{
     padding: 1rem 0 1rem 0;
@@ -399,7 +392,7 @@ fieldset{
           "leyenda5"
     }
     .fotos_maquillaje{
-        grid-template-rows: repeat(4, 0.25fr); 
+        grid-template-rows: 0.05fr repeat(2, 0.25fr) 0.45fr; 
         grid-template-columns: 1fr;
         padding: 1rem;
         margin: 1rem;
@@ -410,7 +403,7 @@ fieldset{
           "parrafo"
     }
     .fotos_bailarinas{
-        grid-template-rows: repeat(4, 0.25fr); 
+        grid-template-rows: 0.05fr 0.45fr repeat(2, 0.25fr); 
         grid-template-columns: 1fr;
         padding: 1rem;
         margin: 1rem;
@@ -458,9 +451,10 @@ fieldset{
     border-top: 3px solid #176B87;
     border-bottom: 3px solid #176B87;
     padding: 5px;
-    background-color:#001C30;
+    background-color:rgb(0, 0, 0);
     text-align: center; 
-    color:#64CCC5
+    color:#055160;
+    font-weight: bold;
 }
 #boton_form{
     width: 80px;
