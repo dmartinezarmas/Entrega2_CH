@@ -22,9 +22,10 @@ header{
 }
  /* ESTILOS PARA EL GRID DE INDEX */
  #principal{
+    height: 70%;
     display: grid;
-    grid-template-rows: 0.25fr 1.5fr 0.25fr; 
-    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.25fr 3fr 0.25fr; 
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "title title"
       "section1 section2"
@@ -34,7 +35,7 @@ header{
     text-align: center;
     grid-area: title;
     background-color: #64ccc5b6;
-    border: 3px solid ;
+    border: 3px solid #176B87;
     border-radius: 10px;
     padding: 1rem;
     margin: 1rem;
@@ -67,8 +68,9 @@ header{
     padding: 1rem;
     margin: 0 30% 1rem 30%;
 }
-#sectionAltar {
+#section_altar {
     margin: 1rem;
+
 }
 article{
     text-align: center;
@@ -76,25 +78,18 @@ article{
 article h3{
     font-weight: bolder;
 }
-#videoAltar{
+#video_altar{
     display: flex;
     text-align: center;
     border-radius: 5px;
     margin: 0 1rem 2rem 1rem;
 }
-#section1 img{
-    max-height: 35rem;
-}
-#section2 video{
-    max-height: 32rem;
-}
 #video{
-    width: 60%;
-    height: 90vh;
+    width: 55%;
     margin-top: 0;
     margin: 0 1rem 0 1rem;
 }
-#videoAltar p{
+#video_altar p{
     width: 40%; 
     margin-top: 0;
     margin: 0 1rem 0 1rem;
@@ -106,7 +101,7 @@ article h3{
     flex-direction: column;
     margin-top: 2%;
 }
-.navHistoria{
+.nav_historia{
     height: 70%;
     margin: 4%;
     gap: 1rem;
@@ -156,12 +151,12 @@ article h3{
     border-radius: 10px;
     padding: 0.5rem;
 }
- .navHistoria img{
+ .nav_historia img{
     max-width: 400px;
     width: 90%;
  }
  /* ESTILOS PARA EL GRID FOTOS CATRINA */
-.fotosMaquillaje{
+.fotos_maquillaje{
     margin: 2rem 1rem 1rem 1rem;
     padding: 1rem;
     height: 50%;
@@ -175,7 +170,7 @@ article h3{
       "titulo_fotos titulo_fotos titulo_fotos"
       "imagen1 imagen2 parrafo"
 }
-.tituloFotos {
+.titulo_fotos {
     text-align: center;
     grid-area: titulo_fotos;
 }
@@ -191,7 +186,7 @@ article h3{
     grid-area: parrafo;
 }
  /* ESTILOS PARA EL GRID FOTOS BAILARINAS */
- .fotosBailarinas{
+ .fotos_bailarinas{
     margin: 2rem 1rem 1rem 1rem;
     padding: 1rem;
     overflow: hidden;
@@ -206,7 +201,7 @@ article h3{
       "titulo_fotos titulo_fotos titulo_fotos"
       "parrafo imagen1 imagen2"
 }
-.tituloFotos {
+.titulo_fotos {
     text-align: center;
     grid-area: titulo_fotos;
 }
@@ -219,16 +214,16 @@ article h3{
 .parrafo {
     grid-area: parrafo;
 }
-.mainFotos img{
+.main_fotos img{
     max-width: 98%;
     margin: 0.5rem;
 }
-.fotosPersonajes{
+.fotos_personajes{
     margin: 5rem;
     text-align: center;
 }
  /* ESTILOS PARA EL GRID FOTOS ALTAR */
-.fotosAltar{
+.fotos_altar{
     margin: 2rem 1rem 1rem 1rem;
     height: 50%;
     gap: 1rem;
@@ -242,7 +237,7 @@ article h3{
       "img3 img4"
       "parrafo parrafo"
 }
-.fotosAltar h3 {
+.fotos_altar h3 {
     text-align: center;
     grid-area: titulo;
 }
@@ -263,7 +258,7 @@ article h3{
     max-width: 95%;
     grid-area: img4;
     border-radius: 10px;
-}.fotosAltar p {
+}.fotos_altar p {
     text-align: center;
     grid-area: parrafo;
 }
@@ -279,14 +274,9 @@ article h3{
 .comunidad div{
     text-align: center;
 }
-#sectionFotosComunidad{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 .fotoComunidad{
     max-width:45%;
+    margin: 1%;
 }
 .comunidad h2{
     text-align: center;
@@ -297,7 +287,7 @@ div img{
     margin: 1rem;
 }
 /* ESTILOS PARA LA PAGINA CONTACTOS */
-.menuContacto{
+.menu_contacto{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -312,11 +302,11 @@ fieldset{
 #comentario{
     max-width: 99%;
 }
-.textoMaiz{
+.texto_maiz{
     padding: 1rem 0 1rem 0;
     border-top: 2px solid #001C30;
 }
-.menuContacto h5{
+.menu_contacto h5{
     text-align: center;
     font-size: x-large;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -327,7 +317,7 @@ fieldset{
 }
 /* MEDIA QUERY PARA 1200px*/
 @media (max-width: 1200px){
-    .fotosMaquillaje{
+    .fotos_maquillaje{
         grid-template-rows: 0.25fr 1.5fr 0.5fr; 
         grid-template-columns: repeat(2, 3fr);
         grid-template-areas:
@@ -335,7 +325,7 @@ fieldset{
           "imagen1 imagen2"
           "parrafo parrafo"
     }
-    .fotosBailarinas{
+    .fotos_bailarinas{
         grid-template-rows: 0.25fr 1fr 0.5fr; 
         grid-template-columns: repeat(2, 3fr);
         grid-template-areas:
@@ -343,15 +333,16 @@ fieldset{
           "imagen1 imagen2"
           "parrafo parrafo"
     }
-    #videoAltar{
+    #video_altar{
         flex-direction: column;
         text-align: center;
         align-items: center;
     }
-    #videoAltar p{
+    #video_altar p{
         width: fit-content;
     }
 }     
+
 /* PARA LA CEBECERA DE CADA PÁGINA EN MOBILE: index, historias y fotos */
 @media (max-width: 740px){
     body{
@@ -379,17 +370,17 @@ fieldset{
         padding: 0.5rem;
         margin: 0 30% 1rem 30%;
     }
-    #videoAltar{
+    #video_altar{
         flex-direction: column;
         text-align: center;
     }
     #video{
         width: 90%;
     }
-    #videoAltar p{
+    #video_altar p{
         width: 90%;
     }
-    .navHistoria{
+    .nav_historia{
         grid-template-rows: 0.75fr 0.5fr 0.5fr 1fr 0.5fr; 
         grid-template-columns: 1fr;
         text-align: center;
@@ -400,7 +391,7 @@ fieldset{
           "leyenda4"
           "leyenda5"
     }
-    .fotosMaquillaje{
+    .fotos_maquillaje{
         grid-template-rows: 0.05fr repeat(2, 0.25fr) 0.45fr; 
         grid-template-columns: 1fr;
         padding: 1rem;
@@ -411,7 +402,7 @@ fieldset{
           "imagen2" 
           "parrafo"
     }
-    .fotosBailarinas{
+    .fotos_bailarinas{
         grid-template-rows: 0.05fr 0.45fr repeat(2, 0.25fr); 
         grid-template-columns: 1fr;
         padding: 1rem;
@@ -422,7 +413,7 @@ fieldset{
           "imagen1"
           "imagen2"
     }
-    .fotosAltar{
+    .fotos_altar{
         grid-template-rows: repeat(5, 0.25fr); 
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -437,9 +428,6 @@ fieldset{
         flex-direction: row;
         justify-content: center;
         flex-basis: 90%;
-    }
-    .fotoComunidad{
-        max-width:85%;
     }
 }
 @media (max-width: 530px){
@@ -468,17 +456,14 @@ fieldset{
     color:#055160;
     font-weight: bold;
 }
-#pie a img{
-    height: 50px;
-}
-#botonForm{
+#boton_form{
     width: 80px;
     height: 25px;
     font-size: 0.8rem;
     border-radius: 5px;
     border-bottom:ridge
 }
-#botonPie{
+#boton_pie{
     width: 100px;
     height: 30px;
     font-size: 1rem;
@@ -486,7 +471,7 @@ fieldset{
     border-radius: 15px;
     border-bottom: outset;
 }
-#botonPie:hover{
+#boton_pie:hover{
     color:#64CCC5;
     width: 7rem;
     border-color:#64CCC5;

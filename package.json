@@ -1,0 +1,11 @@
+{
+  "name": "mi_repocoder1",
+  "version": "1.0.0",
+  "description": "Hi! Thank you for readme. \r Let me tell you about this project.\r This is the first project in Coder House Web Development course.\r It is about Dia de Muertos organizated by mexican community in Mar del Plata.\r In order to make this project HTML, CSS and Bootstrap were used.\r Created by Diego Martinez Armas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
