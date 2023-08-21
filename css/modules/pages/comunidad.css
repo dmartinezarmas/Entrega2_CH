@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *    ,
- * 23 |                 border-radius: $borde*7;
+ * 28 |                 border-radius: $borde*7;
  *    |                                ^^^^^^
  *    '
- *   scss\modules\pages\comunidad.scss 23:32  root stylesheet */
+ *   scss\modules\pages\comunidad.scss 28:32  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 23 \2502                  border-radius: $borde*7;\d\a    \2502                                 ^^^^^^\a    \2575 \a   scss\\modules\\pages\\comunidad.scss 23:32  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 28 \2502                  border-radius: $borde*7;\d\a    \2502                                 ^^^^^^\a    \2575 \a   scss\\modules\\pages\\comunidad.scss 28:32  root stylesheet";
 }

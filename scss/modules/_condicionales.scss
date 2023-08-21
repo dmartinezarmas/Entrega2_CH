@@ -141,9 +141,21 @@ $vista3: 530;
         }
         body{
             .comunidad{
-                flex-direction: row;
-                justify-content: center;
-                flex-basis: 90%;
+                div{
+                    #sectionFotosComunidad{
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        flex-basis: 90%;
+                        .fotoComunidad{
+                            max-width:75%;
+                            margin: 1%;
+                        }
+                    }
+                    h1{
+                        font-size: large;
+                    }
+                }
             }
         }
     }

@@ -275,6 +275,7 @@ body .comunidad {
   overflow: hidden;
 }
 body .comunidad div {
+  padding: 0.5rem;
   text-align: center;
   background-color: rgba(100, 204, 197, 0.7137254902);
   border: 3px solid #176B87;
@@ -284,6 +285,12 @@ body .comunidad div {
 body .comunidad div h2 {
   text-align: center;
   font-weight: bolder;
+}
+body .comunidad div #sectionFotosComunidad {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 body .comunidad div #sectionFotosComunidad .fotoComunidad {
   max-width: 45%;
@@ -465,10 +472,18 @@ body main .leyenda5 {
   body .mainFotos .fotosPersonajes {
     margin: 2rem;
   }
-  body .comunidad {
-    flex-direction: row;
+  body .comunidad div #sectionFotosComunidad {
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex-basis: 90%;
+  }
+  body .comunidad div #sectionFotosComunidad .fotoComunidad {
+    max-width: 75%;
+    margin: 1%;
+  }
+  body .comunidad div h1 {
+    font-size: large;
   }
 }
 @media screen and (max-width: 530px) {
