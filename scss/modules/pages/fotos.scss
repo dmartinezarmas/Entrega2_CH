@@ -7,7 +7,7 @@ body{
             height: 50%;
             background-color: #64ccc5b6;
             border: 3px solid #176B87;
-            border-radius: 10px;
+            border-radius: $borde*3;
             display: grid;
             grid-template-rows: 0.25fr 6fr; 
             grid-template-columns: repeat(3, 3fr);
@@ -23,14 +23,14 @@ body{
                 grid-area: imagen1;
                 max-width: 98%;
                 margin: 0.5rem;
-                border-radius: 10px;
+                border-radius: $borde*3;
             }
             .imagen2 {
                 max-width: 90%;
                 grid-area: imagen2;
                 max-width: 98%;
                 margin: 0.5rem;
-                border-radius: 10px;
+                border-radius: $borde*3;
             }
             .parrafo {
                 grid-area: parrafo;
@@ -44,7 +44,7 @@ body{
             height: 50%;
             background-color: #64ccc5b6;
             border: 3px solid #176B87;
-            border-radius: 10px;
+            border-radius: $borde*3;
             display: grid;
             grid-template-rows: 0.25fr 6fr; 
             grid-template-columns: repeat(3, 3fr);
@@ -59,13 +59,13 @@ body{
                 grid-area: imagen1;
                 max-width: 98%;
                 margin: 0.5rem;
-                border-radius: 5px;
+                border-radius: $borde*2;
             }
             .imagen2 {
                 grid-area: imagen2;
                 max-width: 98%;
                 margin: 0.5rem;
-                border-radius: 5px;
+                border-radius: $borde*2;
             }
             .parrafo {
                 grid-area: parrafo;
@@ -75,7 +75,14 @@ body{
             margin: 5rem;
             text-align: center;
             img{
-                border-radius: 5px;
+                border-radius: $borde*2;
+            }
+            p{
+                @include bordeSections;
+                padding: 1rem;
+                margin: 0.5rem;
+                border-top: $borde solid $colorBorder;
+        
             }
         }
         .fotosAltar{
@@ -98,26 +105,30 @@ body{
             .img1 {
                 max-width: 95%;
                 grid-area: img1;
-                border-radius: 10px;
+                border-radius: $borde*3;
             }
             .img2 {
                 max-width: 95%;
                 grid-area: img2;
-                border-radius: 10px;
+                border-radius: $borde*3;
             }
             .img3 {
                 max-width: 95%;
                 grid-area: img3;
-                border-radius: 10px;
+                border-radius: $borde*3;
             }
             .img4 {
                 max-width: 95%;
                 grid-area: img4;
-                border-radius: 10px;
+                border-radius: $borde*3;
             }
             p {
                 text-align: center;
                 grid-area: parrafo;
+                @include bordeSections;
+                padding: 1rem;
+                margin: 0.5rem;
+                border-top: $borde solid $colorBorder;
             }
             
         }

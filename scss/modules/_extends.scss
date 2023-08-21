@@ -9,7 +9,7 @@ main{
             h2{
                 font-weight: bolder;
             }
-            }
+        }
         #section1{
             @extend #title;
             grid-area: section1;
@@ -31,5 +31,14 @@ main{
             font-size: x-large;
             margin: 0 30% 1rem 30%;
         }
+    }
+    #sectionAltar{
+        #videoAltar{
+            p{
+                text-align: left;
+                @include bordeSections;
+                padding: 0.5rem;
+            }
         }
+    }
 }

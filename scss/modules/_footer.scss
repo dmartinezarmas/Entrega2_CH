@@ -1,31 +1,33 @@
 #pie{
-    border-top: 3px solid #176B87;
-    border-bottom: 3px solid #176B87;
+    border-top: $borde solid $colorBorder;
+    border-bottom: $borde solid $colorBorder;
     padding: 5px;
-    background-color:rgb(0, 0, 0);
+    background: radial-gradient(ellipse 70% 100%, black, #001C30, #055160);
     text-align: center; 
-    color:#055160;
+    color:$colorTextoPie;
     font-weight: bold;
     #botonPie{
         width: 100px;
         height: 30px;
         font-size: 1rem;
         font-weight: bold;
-        border-radius: 15px;
+        border-radius: $borde*5;
         border-bottom: outset;
+        transition: transform 0.3s;
         &:hover{
-            color:#64CCC5;
+            color: $colorHoverBotonPie;
             width: 7rem;
-            border-color:#64CCC5;
-            background-color: #001C30;
+            border-color:$colorHoverBotonPie;
+            background-color: $colorLineaYBordeContacto;
+            transform: scale(1.2, 1.2);
         }
     }
     div{
         a{
             img{
                 height: 50px;
+                transition: border-radius 0.4s;
                 &:hover{
-                    border: $borde solid $colorBorder;
                     border-radius: 50px;
                 }
             }

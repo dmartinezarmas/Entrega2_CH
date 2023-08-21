@@ -1,23 +1,27 @@
-$vista: desktop;
-@if $vista == desktop {
+$vista1: 1200;
+$vista2: 740;
+$vista3: 530;
+@if $vista1 == 1200 {
     /* MEDIA QUERY PARA 1200px*/
     @media screen and (max-width: 1200px){
-        #mainFotos{
-            .fotosMaquillaje{
-                grid-template-rows: 0.25fr 1.5fr 0.5fr; 
-                grid-template-columns: repeat(2, 3fr);
-                grid-template-areas:
-                "titulo_fotos titulo_fotos"
-                "imagen1 imagen2"
-                "parrafo parrafo"
-            }
-            .fotosBailarinas{
-                grid-template-rows: 0.25fr 1fr 0.5fr; 
-                grid-template-columns: repeat(2, 3fr);
-                grid-template-areas:
-                "titulo_fotos titulo_fotos"
-                "imagen1 imagen2"
-                "parrafo parrafo"
+        body{
+            .mainFotos{
+                .fotosMaquillaje{
+                    grid-template-rows: 0.25fr 1.5fr 0.5fr; 
+                    grid-template-columns: repeat(2, 3fr);
+                    grid-template-areas:
+                    "tituloFotos tituloFotos"
+                    "imagen1 imagen2"
+                    "parrafo parrafo"
+                }
+                .fotosBailarinas{
+                    grid-template-rows: 0.25fr 1fr 0.5fr; 
+                    grid-template-columns: repeat(2, 3fr);
+                    grid-template-areas:
+                    "tituloFotos tituloFotos"
+                    "imagen1 imagen2"
+                    "parrafo parrafo"
+                }
             }
         }
         main{
@@ -32,9 +36,10 @@ $vista: desktop;
                 }
             }
         }
-    }     
-
-    /* PARA LA CEBECERA DE CADA PÁGINA EN MOBILE: index, historias y fotos */
+    }
+}     
+@if $vista2 == 740{
+    /* MEDIA QUERY PARA 740px*/
     @media screen and (max-width: 740px){
         body{
             font-size: medium;
@@ -45,7 +50,7 @@ $vista: desktop;
             }
             main{
                 #principal{
-                    grid-template-rows: 0.5fr 2fr 2fr 0.25fr; 
+                    grid-template-rows: 0.25fr 1fr 1.5fr 0.05fr; 
                     grid-template-columns: 1fr;
                     grid-template-areas:
                     "title"
@@ -93,15 +98,16 @@ $vista: desktop;
                 }
             }
         }
+        /* ESTILOS PARA FOTOS */
         body{
-            #mainFotos{
+            .mainFotos{
                 .fotosMaquillaje{
                     grid-template-rows: 0.05fr repeat(2, 0.25fr) 0.45fr; 
                     grid-template-columns: 1fr;
                     padding: 1rem;
                     margin: 1rem;
                     grid-template-areas:
-                    "titulo_fotos"
+                    "tituloFotos"
                     "imagen1" 
                     "imagen2" 
                     "parrafo"
@@ -112,7 +118,7 @@ $vista: desktop;
                     padding: 1rem;
                     margin: 1rem;
                     grid-template-areas:
-                    "titulo_fotos"
+                    "tituloFotos"
                     "parrafo"
                     "imagen1"
                     "imagen2"
@@ -128,6 +134,9 @@ $vista: desktop;
                     "img4"
                     "parrafo"
                 }
+                .fotosPersonajes{
+                    margin: 2rem;
+                }
             }
         }
         body{
@@ -138,20 +147,33 @@ $vista: desktop;
             }
         }
     }
+}
+@if $vista3 == 530 {
     @media screen and (max-width: 530px){
-        p, li{
-            font-size: small;
-        }
-        h1, h2, h3{
-            font-size: medium;
-        }
-        #seleccion {
-            display: flex;
-            flex-direction: column;
-            max-width: 300px;
-            font-size: medium;
-            padding: 1rem;
-            margin: 0 20% 1rem 20%;
+        body{
+            p{
+                font-size: small;
+            }
+            ol{
+                li{
+                    font-size: small;
+                }
+            }
+            h1, h2, h3, h4{
+                font-size: medium;
+            }
+            main{
+                #seleccion {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 20% 1rem 20%;
+                }
+            }
+            .mainFotos{
+                .fotosPersonajes{
+                        margin: 1rem;
+                }
+            }
         }
     }
 }

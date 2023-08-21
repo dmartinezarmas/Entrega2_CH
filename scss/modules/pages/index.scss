@@ -1,3 +1,14 @@
+header{
+    nav{
+        div{
+            #textoHeader{
+                background: linear-gradient(to right, green,white,red);
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+        }
+    }
+}
 main{
     #principal{
         height: 70%;

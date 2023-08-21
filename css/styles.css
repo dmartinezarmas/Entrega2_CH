@@ -1,18 +1,50 @@
-@charset "UTF-8";
 @font-face {
   font-family: "average";
   src: url(../assets/font/AverageSans-Regular.ttf);
 }
 body {
-  background-color: rgba(254, 255, 201, 0.733);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  animation-name: bgDiego;
+  transition: all 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  padding-top: 9px;
+  padding-bottom: 9px;
   font-family: "average";
 }
+body h1, body h2 {
+  font-weight: bold;
+}
 
+@keyframes bgDiego {
+  0% {
+    background: rgba(255, 231, 151, 0.692);
+  }
+  10% {
+    background: rgba(253, 255, 132, 0.644);
+  }
+  40% {
+    background: rgba(255, 220, 125, 0.712);
+  }
+  70% {
+    background: rgba(255, 227, 68, 0.699);
+  }
+  90% {
+    background: rgba(255, 241, 159, 0.726);
+  }
+  100% {
+    background: rgba(255, 231, 151, 0.692);
+  }
+}
 header {
   border-top: 3px solid #176B87;
   border-bottom: 3px solid #176B87;
+}
+
+header nav div #textoHeader {
+  background: linear-gradient(to right, green, white, red);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 main #principal {
@@ -77,6 +109,13 @@ main #principal #seleccion {
   font-size: x-large;
   margin: 0 30% 1rem 30%;
 }
+main #sectionAltar #videoAltar p {
+  text-align: left;
+  background-color: rgba(100, 204, 197, 0.7137254902);
+  border: 3px solid #176B87;
+  border-radius: 9px;
+  padding: 0.5rem;
+}
 
 body main .musica {
   display: flex;
@@ -106,7 +145,7 @@ body .mainFotos .fotosMaquillaje {
   height: 50%;
   background-color: rgba(100, 204, 197, 0.7137254902);
   border: 3px solid #176B87;
-  border-radius: 10px;
+  border-radius: 9px;
   display: grid;
   grid-template-rows: 0.25fr 6fr;
   grid-template-columns: repeat(3, 3fr);
@@ -121,14 +160,14 @@ body .mainFotos .fotosMaquillaje .imagen1 {
   grid-area: imagen1;
   max-width: 98%;
   margin: 0.5rem;
-  border-radius: 10px;
+  border-radius: 9px;
 }
 body .mainFotos .fotosMaquillaje .imagen2 {
   max-width: 90%;
   grid-area: imagen2;
   max-width: 98%;
   margin: 0.5rem;
-  border-radius: 10px;
+  border-radius: 9px;
 }
 body .mainFotos .fotosMaquillaje .parrafo {
   grid-area: parrafo;
@@ -141,7 +180,7 @@ body .mainFotos .fotosBailarinas {
   height: 50%;
   background-color: rgba(100, 204, 197, 0.7137254902);
   border: 3px solid #176B87;
-  border-radius: 10px;
+  border-radius: 9px;
   display: grid;
   grid-template-rows: 0.25fr 6fr;
   grid-template-columns: repeat(3, 3fr);
@@ -155,13 +194,13 @@ body .mainFotos .fotosBailarinas .imagen1 {
   grid-area: imagen1;
   max-width: 98%;
   margin: 0.5rem;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 body .mainFotos .fotosBailarinas .imagen2 {
   grid-area: imagen2;
   max-width: 98%;
   margin: 0.5rem;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 body .mainFotos .fotosBailarinas .parrafo {
   grid-area: parrafo;
@@ -171,7 +210,15 @@ body .mainFotos .fotosPersonajes {
   text-align: center;
 }
 body .mainFotos .fotosPersonajes img {
-  border-radius: 5px;
+  border-radius: 6px;
+}
+body .mainFotos .fotosPersonajes p {
+  background-color: rgba(100, 204, 197, 0.7137254902);
+  border: 3px solid #176B87;
+  border-radius: 9px;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-top: 3px solid #176B87;
 }
 body .mainFotos .fotosAltar {
   margin: 2rem 1rem 1rem 1rem;
@@ -190,26 +237,32 @@ body .mainFotos .fotosAltar h3 {
 body .mainFotos .fotosAltar .img1 {
   max-width: 95%;
   grid-area: img1;
-  border-radius: 10px;
+  border-radius: 9px;
 }
 body .mainFotos .fotosAltar .img2 {
   max-width: 95%;
   grid-area: img2;
-  border-radius: 10px;
+  border-radius: 9px;
 }
 body .mainFotos .fotosAltar .img3 {
   max-width: 95%;
   grid-area: img3;
-  border-radius: 10px;
+  border-radius: 9px;
 }
 body .mainFotos .fotosAltar .img4 {
   max-width: 95%;
   grid-area: img4;
-  border-radius: 10px;
+  border-radius: 9px;
 }
 body .mainFotos .fotosAltar p {
   text-align: center;
   grid-area: parrafo;
+  background-color: rgba(100, 204, 197, 0.7137254902);
+  border: 3px solid #176B87;
+  border-radius: 9px;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-top: 3px solid #176B87;
 }
 
 /* ESTILOS PARA LA PAGINA COMUNIDAD */
@@ -223,6 +276,10 @@ body .comunidad {
 }
 body .comunidad div {
   text-align: center;
+  background-color: rgba(100, 204, 197, 0.7137254902);
+  border: 3px solid #176B87;
+  border-radius: 9px;
+  margin-bottom: 1rem;
 }
 body .comunidad div h2 {
   text-align: center;
@@ -233,8 +290,50 @@ body .comunidad div #sectionFotosComunidad .fotoComunidad {
   margin: 1%;
 }
 body .comunidad div img {
-  border-radius: 20px;
+  border-radius: 21px;
   margin: 1rem;
+}
+
+/* ESTILOS PARA LA PAGINA CONTACTOS */
+body .menuContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+body .menuContacto fieldset {
+  margin: 2rem 0 2rem 0;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+body .menuContacto fieldset form div #comentario {
+  max-width: 99%;
+  transition: border 0.5s;
+}
+body .menuContacto fieldset form div #comentario:hover {
+  border-radius: 6px;
+  border: 3px solid #176B87;
+}
+body .menuContacto .textoMaiz {
+  background-color: rgba(100, 204, 197, 0.7137254902);
+  border: 3px solid #176B87;
+  border-radius: 9px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-top: 3px solid #176B87;
+}
+body .menuContacto .apoyo {
+  background-color: rgba(100, 204, 197, 0.7137254902);
+  border: 3px solid #176B87;
+  border-radius: 9px;
+  padding: 1rem;
+  border-top: 3px solid #176B87;
+}
+body .menuContacto div h5 {
+  text-align: center;
+  font-size: x-large;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 body main .leyenda1 {
@@ -284,15 +383,15 @@ body main .leyenda5 {
 
 /* MEDIA QUERY PARA 1200px*/
 @media screen and (max-width: 1200px) {
-  #mainFotos .fotosMaquillaje {
+  body .mainFotos .fotosMaquillaje {
     grid-template-rows: 0.25fr 1.5fr 0.5fr;
     grid-template-columns: repeat(2, 3fr);
-    grid-template-areas: "titulo_fotos titulo_fotos" "imagen1 imagen2" "parrafo parrafo";
+    grid-template-areas: "tituloFotos tituloFotos" "imagen1 imagen2" "parrafo parrafo";
   }
-  #mainFotos .fotosBailarinas {
+  body .mainFotos .fotosBailarinas {
     grid-template-rows: 0.25fr 1fr 0.5fr;
     grid-template-columns: repeat(2, 3fr);
-    grid-template-areas: "titulo_fotos titulo_fotos" "imagen1 imagen2" "parrafo parrafo";
+    grid-template-areas: "tituloFotos tituloFotos" "imagen1 imagen2" "parrafo parrafo";
   }
   main #sectionAltar #videoAltar {
     flex-direction: column;
@@ -303,7 +402,7 @@ body main .leyenda5 {
     width: fit-content;
   }
 }
-/* PARA LA CEBECERA DE CADA PÁGINA EN MOBILE: index, historias y fotos */
+/* MEDIA QUERY PARA 740px*/
 @media screen and (max-width: 740px) {
   body {
     font-size: medium;
@@ -312,7 +411,7 @@ body main .leyenda5 {
     padding: 0.5rem;
   }
   body main #principal {
-    grid-template-rows: 0.5fr 2fr 2fr 0.25fr;
+    grid-template-rows: 0.25fr 1fr 1.5fr 0.05fr;
     grid-template-columns: 1fr;
     grid-template-areas: "title" "section1" "section2" "seleccion";
   }
@@ -343,24 +442,28 @@ body main .leyenda5 {
     text-align: center;
     grid-template-areas: "leyenda1" "leyenda2" "leyenda3" "leyenda4" "leyenda5";
   }
-  body #mainFotos .fotosMaquillaje {
+  /* ESTILOS PARA FOTOS */
+  body .mainFotos .fotosMaquillaje {
     grid-template-rows: 0.05fr repeat(2, 0.25fr) 0.45fr;
     grid-template-columns: 1fr;
     padding: 1rem;
     margin: 1rem;
-    grid-template-areas: "titulo_fotos" "imagen1" "imagen2" "parrafo";
+    grid-template-areas: "tituloFotos" "imagen1" "imagen2" "parrafo";
   }
-  body #mainFotos .fotosBailarinas {
+  body .mainFotos .fotosBailarinas {
     grid-template-rows: 0.05fr 0.45fr repeat(2, 0.25fr);
     grid-template-columns: 1fr;
     padding: 1rem;
     margin: 1rem;
-    grid-template-areas: "titulo_fotos" "parrafo" "imagen1" "imagen2";
+    grid-template-areas: "tituloFotos" "parrafo" "imagen1" "imagen2";
   }
-  body #mainFotos .fotosAltar {
+  body .mainFotos .fotosAltar {
     grid-template-rows: repeat(5, 0.25fr);
     grid-template-columns: 1fr;
     grid-template-areas: "titulo" "img1" "img2" "img3" "img4" "parrafo";
+  }
+  body .mainFotos .fotosPersonajes {
+    margin: 2rem;
   }
   body .comunidad {
     flex-direction: row;
@@ -369,26 +472,29 @@ body main .leyenda5 {
   }
 }
 @media screen and (max-width: 530px) {
-  p, li {
+  body p {
     font-size: small;
   }
-  h1, h2, h3 {
+  body ol li {
+    font-size: small;
+  }
+  body h1, body h2, body h3, body h4 {
     font-size: medium;
   }
-  #seleccion {
+  body main #seleccion {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
-    font-size: medium;
-    padding: 1rem;
     margin: 0 20% 1rem 20%;
+  }
+  body .mainFotos .fotosPersonajes {
+    margin: 1rem;
   }
 }
 #pie {
   border-top: 3px solid #176B87;
   border-bottom: 3px solid #176B87;
   padding: 5px;
-  background-color: rgb(0, 0, 0);
+  background: radial-gradient(ellipse 70% 100%, black, #001C30, #055160);
   text-align: center;
   color: #055160;
   font-weight: bold;
@@ -400,18 +506,20 @@ body main .leyenda5 {
   font-weight: bold;
   border-radius: 15px;
   border-bottom: outset;
+  transition: transform 0.3s;
 }
 #pie #botonPie:hover {
   color: #64CCC5;
   width: 7rem;
   border-color: #64CCC5;
   background-color: #001C30;
+  transform: scale(1.2, 1.2);
 }
 #pie div a img {
   height: 50px;
+  transition: border-radius 0.4s;
 }
 #pie div a img:hover {
-  border: 3px solid #176B87;
   border-radius: 50px;
 }
 

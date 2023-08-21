@@ -3,12 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="historias y leyendas mexicanas sobre el dia de muertos"/>
+        <meta name="keywords" content="historias, cuentos, leyendas, tradicion, colibri, monarca"/>
         <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="../css/styles.css">
         <title>Dia de Muertos</title>
     </head>
@@ -17,28 +20,28 @@
             <!--Navbar agregada desde bootstraps-->
             <nav class="navbar navbar-expand-lg bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand text-light" href="#">HISTORIAS Y LEYENDAS</a>
+                    <a id="textoHeader" class="navbar-brand" href="#">HISTORIAS Y LEYENDAS</a>
                     <button class="navbar-toggler text-bg-secondary p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active text-info-emphasis" aria-current="page" href="../index.html">INICIO</a>
+                                <a class="nav-link active text-light" aria-current="page" href="../index.html">INICIO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-info-emphasis" href="./historia.html">HISTORIAS</a>
+                                <a class="nav-link text-light" href="./historia.html">HISTORIAS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-info-emphasis" href="./fotos.html">FOTOS</a>
+                                <a class="nav-link text-light" href="./fotos.html">FOTOS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-info-emphasis" href="./comunidad.html">COMUNIDAD</a>
+                                <a class="nav-link text-light" href="./comunidad.html">COMUNIDAD</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-info-emphasis" href="./contacto.html">CONTACTO</a>
+                                <a class="nav-link text-light" href="./contacto.html">CONTACTO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-info-emphasis" href="#pie">NUESTRAS REDES</a>
+                                <a class="nav-link text-light" href="#pie">NUESTRAS REDES</a>
                             </li>
                         </ul>
                     </div>
@@ -47,14 +50,14 @@
         </header>
         <main>
             <div class="musica">
-                <h2>¡¡¡MUSICA MEXICANA!!!</h2>
+                <h1 class="animate__animated animate__rubberBand">¡¡¡MUSICA MEXICANA!!!</h1>
                 <audio controls>
                     <source src="../assets/mariachiando _Doug Maxwell_Jimmy Fontanez.mp3" type="audio/mp3">
                 </audio>
             </div>
             <section  class="navHistoria">
                 <div class="leyenda1">
-                    <h2>HISTORIA DEL DIA DE MUERTOS</h2>
+                    <h2 class="animate__animated animate__backInRight">HISTORIAS DEL DIA DE MUERTOS</h2>
                     <p>El Día de Muertos es una celebración tradicional mexicana que tiene profundas raíces prehispánicas y se ha mantenido viva a lo largo de los siglos. La leyenda cuenta que la diosa Mictecacíhuatl, conocida como "La Dama de la Muerte", gobernaba el inframundo. Cada año, permitía a las almas de los difuntos regresar al mundo de los vivos para reunirse con sus seres queridos.
                     La cronología del Día de Muertos se extiende a lo largo de tres días: 
                     </p>
@@ -66,25 +69,26 @@
                     </ol>
                     <p>En estas fechas, las calles se llenan de coloridos desfiles, calaveras de azúcar, disfraces y la música alegre de los mariachis. El Día de Muertos es una festividad llena de significado, un momento de conexión entre vivos y muertos, donde se celebra la vida y se recuerda con amor a quienes han partido. Es una manifestación única de la cultura mexicana que trasciende el tiempo y mantiene viva la memoria de aquellos que ya no están físicamente, pero que permanecen en el corazón de sus seres queridos.
                     </p>
+                    <a href="./fotos.html"><strong>LEYENDA DE LA CATRINA</strong></a>
                 </div>
                 <div class="leyenda2">
-                    <h3>LEYENDA DEL ALTAR: Mariposa Monarca</h3>
-                    <img src="../assets/img/relato1.jpg" alt="fotoCatrinaAltarMariposaMonarca">
+                    <h3><strong>LEYENDA DEL ALTAR: Mariposa Monarca</strong></h3>
+                    <img src="../assets/img/relato1.webp" alt="fotoCatrinaAltarMariposaMonarca">
                     <p>La leyenda de la mariposa monarca cuenta que las almas de los difuntos regresan en forma de mariposas para visitar a sus seres queridos durante el Día de Muertos. Estas majestuosas mariposas naranjas y negras representan la travesía del alma hacia el más allá. En el altar del Día de Muertos, se colocan imágenes de mariposas monarcas para honrar y guiar a los espíritus hacia el mundo terrenal, creando un puente entre el reino de los vivos y los fallecidos en esta mágica festividad.
-                    </p>
+                    MIRÁ LAS FOTOS DEL <a href="./fotos.html#fotosDelAltar"><strong>ALTAR</strong></a></p>
                 </div>
                 <div class="leyenda3">
-                    <h3>LEYENDA DEL ALTAR: El Colibrí en el dia de muertos</h3>
-                    <img src="../assets/img/relato3.jpg" alt="fotoCatrinaAltarColibri">
+                    <h3><strong>LEYENDA DEL ALTAR: El Colibrí en el dia de muertos</strong></h3>
+                    <img src="../assets/img/relato3.webp" alt="fotoCatrinaAltarColibri">
                     <p>La leyenda del colibrí relata que estos pequeños pájaros son mensajeros que transportan las almas de los difuntos hacia el mundo espiritual durante el Día de Muertos. Se cree que su rápido vuelo representa la travesía entre ambos mundos. En el altar del Día de Muertos, se colocan imágenes o figuras de colibríes para simbolizar la conexión entre los vivos y los fallecidos, y para honrar a los seres queridos que han partido en esta especial conmemoración.
                     </p>
                 </div>
                 <div class="leyenda4">
-                    <h3>HISTORIA DE NUESTRA COMUNIDAD</h3>
+                    <h3><strong>HISTORIA DE NUESTRA COMUNIDAD</strong></h3>
                     <h4>MEXICANOS EN MAR DEL PLATA</h4>
-                    <img src="../assets/img/relato2.jpg" alt="fotoCatrinaRelatoComunidad">
+                    <img src="../assets/img/relato2.webp" alt="fotoCatrinaRelatoComunidad">
                     <p>En 2018, un grupo de mexicanos y mexicanas casados con argentinos/as se unieron en Mar del Plata con el objetivo de preservar y divulgar su cultura. Organizaron eventos y talleres de cocina, danza y música mexicana para compartir con la comunidad local. Pronto, su iniciativa atrajo la atención de otros residentes interesados en conocer más sobre México y su rica herencia cultural. Con el tiempo, la comunidad mexicana creció, creando un espacio donde las tradiciones se mezclaban con la cultura argentina, fomentando la diversidad y el respeto mutuo. Esta comunidad se convirtió en un puente cultural, enriqueciendo la vida de todos los habitantes de Mar del Plata y fortaleciendo los lazos entre ambos países.
-                    </p>
+                    Se trabaja codo a codo con la <a href="https://embamex.sre.gob.mx/argentina/" target="_blank"><strong>EMBAJADA MEXICANA</strong></a> para fomentar y compartir las tradiciones ancestrales.</p>
                 </div>
                 <div class="leyenda5">
                     <p>Desde hace varias décadas, jovenes y adultos originarios de México han llegado a Mar del Plata con una maleta llena de sueños y esperanzas. Se han enamorado de la belleza del mar y de su gente y han decidido establecerse en la ciudad. Pronto, conocieron a sus respectivas parejas, mujeres y hombres argentinos con quienes se casaron y formaron sus familias. Algunos de ellos comenzaron emprendimientos, como por ejemplo un pequeño restaurante de comida mexicana, llevando sabores auténticos a los paladares argentinos.
@@ -101,12 +105,12 @@
                 <p>Teléfono: 223 455645677</p>
                 <p>maizyalebrijes@gmail.com</p>
                 <a href="https://www.facebook.com/profile.php?id=100086286503332">
-                    <img src="../assets/icons/facebook_icon.png" alt="iconoFaceook"</a>
+                    <img src="../assets/icons/fbIcon.svg" alt="iconoFaceook"</a>
                 <a href="https://www.instagram.com/acm.alebrijesymaiz/ ">
-                    <img src="../assets/icons/instagram_icon.png" alt="iconoInstagram">
+                    <img src="../assets/icons/igIcon.svg" alt="iconoInstagram">
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=100086286503332">
-                    <img src="../assets/icons/whatss_icon.png" alt="iconoWhatsapp">
+                    <img src="../assets/icons/waIcon.svg" alt="iconoWhatsapp">
                 </a>
             </div>
         </footer>

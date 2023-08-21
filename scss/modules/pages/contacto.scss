@@ -1,0 +1,46 @@
+/* ESTILOS PARA LA PAGINA CONTACTOS */
+body{
+    .menuContacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        fieldset{
+            margin: 2rem 0 2rem 0;
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+            form{
+                div{
+                    #comentario{
+                        max-width: 99%;
+                        transition: border 0.5s;
+                        &:hover{
+                            border-radius: $borde*2;
+                            border:$borde solid $colorBorder; 
+                        }
+                    }
+                }
+            }
+        }
+        .textoMaiz{
+            @include bordeSections;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border-top: $borde solid $colorBorder;
+        }
+        .apoyo{
+            @include bordeSections;
+            padding: 1rem;
+            border-top: $borde solid $colorBorder;
+        }
+        div{
+            h5{
+                text-align: center;
+                font-size: x-large;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            
+        }
+    }
+}

@@ -1,26 +1,17 @@
-/* ESTILOS PARA LA PAGINA COMUNIDAD */
-body .comunidad {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 1rem;
-  align-items: center;
-  overflow: hidden;
-}
-body .comunidad div {
-  text-align: center;
-}
-body .comunidad div h2 {
-  text-align: center;
-  font-weight: bolder;
-}
-body .comunidad div #sectionFotosComunidad .fotoComunidad {
-  max-width: 45%;
-  margin: 1%;
-}
-body .comunidad div img {
-  border-radius: 20px;
-  margin: 1rem;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 23 |                 border-radius: $borde*7;
+ *    |                                ^^^^^^
+ *    '
+ *   scss\modules\pages\comunidad.scss 23:32  root stylesheet */
 
-/*# sourceMappingURL=comunidad.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 23 \2502                  border-radius: $borde*7;\d\a    \2502                                 ^^^^^^\a    \2575 \a   scss\\modules\\pages\\comunidad.scss 23:32  root stylesheet";
+}

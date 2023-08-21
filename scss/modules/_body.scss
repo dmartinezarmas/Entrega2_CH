@@ -1,6 +1,34 @@
 body{
-    background-color: $colorBgBody;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: "average"
+    animation-name: bgDiego;
+    transition: all 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    padding-top: $borde*3;
+    padding-bottom: $borde*3;
+    font-family: "average";
+    h1, h2{
+        font-weight: bold;
+    }
 }
+@keyframes bgDiego{
+    0%{
+        background: rgba(255, 231, 151, 0.692);
+    }
+    10%{
+        background: rgba(253, 255, 132, 0.644);
+    }
+    40%{
+        background: rgba(255, 220, 125, 0.712);
+    }
+    70%{
+        background: rgba(255, 227, 68, 0.699);
+    }
+    90%{
+        background: rgba(255, 241, 159, 0.726);
+    }
+    100%{
+        background: rgba(255, 231, 151, 0.692);
+    }
+}
+$colorBgBody: rgba(254, 255, 201, 0.733);
