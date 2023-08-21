@@ -1,4 +1,4 @@
-footer #pie{
+#pie{
     border-top: 3px solid #176B87;
     border-bottom: 3px solid #176B87;
     padding: 5px;
@@ -6,7 +6,7 @@ footer #pie{
     text-align: center; 
     color:#055160;
     font-weight: bold;
-    a #botonPie{
+    #botonPie{
         width: 100px;
         height: 30px;
         font-size: 1rem;
@@ -19,10 +19,14 @@ footer #pie{
             border-color:#64CCC5;
             background-color: #001C30;
         }
-        div{
-            a{
-                img{
-                    height: 50px;
+    }
+    div{
+        a{
+            img{
+                height: 50px;
+                &:hover{
+                    border: $borde solid $colorBorder;
+                    border-radius: 50px;
                 }
             }
         }

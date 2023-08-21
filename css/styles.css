@@ -1,495 +1,424 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+@font-face {
+  font-family: "average";
+  src: url(../assets/font/AverageSans-Regular.ttf);
+}
+body {
+  background-color: rgba(254, 255, 201, 0.733);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "average";
 }
 
-@font-face {
-    font-family: "average";
-    src: url(../assets/font/AverageSans-Regular.ttf);
+header {
+  border-top: 3px solid #176B87;
+  border-bottom: 3px solid #176B87;
 }
-/* ESTILO GENERAL PARA EL FONDO DE CADA PÁGINA */
-body{
-    background-color:rgba(254, 255, 201, 0.733);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: "average"
+
+main #principal {
+  height: 70%;
+  display: grid;
+  grid-template-rows: 0.25fr 3fr 0.25fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title title" "section1 section2" "seleccion seleccion";
 }
-/* ESTILO GENERAL PARA LA CEBECERA DE CADA PÁGINA */
-header{
-    border-top: 3px solid #176B87;
-    border-bottom: 3px solid #176B87;
+main #principal #title h2, main #principal #seleccion h2, main #principal #section2 h2, main #principal #section1 h2 {
+  font-weight: bolder;
 }
- /* ESTILOS PARA EL GRID DE INDEX */
- #principal{
-    display: grid;
-    grid-template-rows: 0.25fr 1.5fr 0.25fr; 
-    grid-template-columns: 0.5fr 0.5fr;
-    grid-template-areas:
-      "title title"
-      "section1 section2"
-      "seleccion seleccion"
+main #principal #section1 a img {
+  max-width: 50%;
 }
-#title {
-    text-align: center;
-    grid-area: title;
-    background-color: #64ccc5b6;
-    border: 3px solid ;
-    border-radius: 10px;
-    padding: 1rem;
-    margin: 1rem;
+main #sectionAltar {
+  margin: 1rem;
 }
-#section1 {
-    text-align: center;
-    background-color: #64ccc5b6;
-    border: 3px solid #176B87;
-    border-radius: 10px;
-    margin: 1rem;
-    padding: 1rem;
-    grid-area: section1;
+main #sectionAltar #videoAltar {
+  display: flex;
+  text-align: center;
+  border-radius: 6px;
+  margin: 0 1rem 2rem 1rem;
 }
-#section2 {
-    text-align: center;
-    background-color: #64ccc5b6;
-    border: 3px solid #176B87;
-    border-radius: 10px;
-    margin: 1rem;
-    padding: 1rem;
-    grid-area: section2;
+main #sectionAltar #videoAltar #video {
+  width: 55%;
+  height: 60vh;
+  margin-top: 0;
+  margin: 0 1rem 0 1rem;
 }
-#seleccion {
-    grid-area: seleccion;
-    max-width: 500px;
-    font-size: x-large;
-    text-align: center;
-    border: 5px solid #176B87;
-    border-radius: 10px;
-    padding: 1rem;
-    margin: 0 30% 1rem 30%;
+main #sectionAltar #videoAltar p {
+  width: 40%;
+  margin-top: 0;
+  margin: 0 1rem 0 1rem;
 }
-#sectionAltar {
-    margin: 1rem;
+
+main #principal #title, main #principal #seleccion, main #principal #section2, main #principal #section1 {
+  text-align: center;
+  grid-area: title;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: rgba(100, 204, 197, 0.7137254902);
+  border: 3px solid #176B87;
+  border-radius: 9px;
 }
-article{
-    text-align: center;
+main #principal #title h2, main #principal #seleccion h2, main #principal #section2 h2, main #principal #section1 h2 {
+  font-weight: bolder;
 }
-article h3{
-    font-weight: bolder;
+main #principal #section1 {
+  grid-area: section1;
 }
-#videoAltar{
-    display: flex;
-    text-align: center;
-    border-radius: 5px;
-    margin: 0 1rem 2rem 1rem;
+main #principal #section1 a img {
+  max-width: 50%;
 }
-#section1 img{
-    max-height: 35rem;
+main #principal #section2 {
+  grid-area: section2;
 }
-#section2 video{
-    max-height: 32rem;
+main #principal #seleccion {
+  background-color: rgba(245, 245, 245, 0);
+  grid-area: seleccion;
+  max-width: 500px;
+  font-size: x-large;
+  margin: 0 30% 1rem 30%;
 }
-#video{
-    width: 60%;
-    height: 90vh;
-    margin-top: 0;
-    margin: 0 1rem 0 1rem;
+
+body main .musica {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2%;
 }
-#videoAltar p{
-    width: 40%; 
-    margin-top: 0;
-    margin: 0 1rem 0 1rem;
+body main .navHistoria {
+  height: 70%;
+  margin: 4%;
+  gap: 1rem;
+  display: grid;
+  grid-template-rows: 0.25fr 0.5fr 1fr 0.25fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "leyenda1 leyenda1" "leyenda2 leyenda3" "leyenda4 leyenda4" "leyenda5 leyenda5";
 }
-/* ESTILOS PARA EL GRID DE HISTORIAS */
-.musica{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 2%;
+body main .navHistoria img {
+  max-width: 400px;
+  width: 90%;
+  border-radius: 3px;
 }
-.navHistoria{
-    height: 70%;
-    margin: 4%;
-    gap: 1rem;
-    display: grid;
-    grid-template-rows: 0.25fr 0.5fr 1fr 0.25fr ; 
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "leyenda1 leyenda1"
-      "leyenda2 leyenda3"
-      "leyenda4 leyenda4"
-      "leyenda5 leyenda5"
+
+/* ESTILOS PARA EL GRID FOTOS CATRINA */
+body .mainFotos .fotosMaquillaje {
+  margin: 2rem 1rem 1rem 1rem;
+  padding: 1rem;
+  height: 50%;
+  background-color: rgba(100, 204, 197, 0.7137254902);
+  border: 3px solid #176B87;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 0.25fr 6fr;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-areas: "tituloFotos tituloFotos tituloFotos" "imagen1 imagen2 parrafo";
 }
-.leyenda1 {
-    grid-area: leyenda1;
-    padding: 0.5rem;
-    background-color: #64ccc5b6;
-    border: 3px solid #176B87;
-    border-radius: 10px;
- }
-.leyenda2 {
-    grid-area: leyenda2;
-    padding: 0.5rem;
-    text-align: center;    
-    border: 3px solid #176B87;
-    border-radius: 10px;
- }
-.leyenda3 {
-    grid-area: leyenda3;
-    text-align: center;
-    border: 3px solid #176B87;
-    border-radius: 10px;
-    padding: 0.5rem;
- }
-.leyenda4 {
-    grid-area: leyenda4;
-    text-align: center;
-    border: 3px solid #176B87;
-    border-radius: 10px;
-    padding: 0.5rem;
- }
- .leyenda5 {
-    grid-area: leyenda5;
-    text-align: center;
-    margin-top: 2rem;
-    background-color: #64ccc5b6;
-    border: 3px solid #176B87;
-    border-radius: 10px;
-    padding: 0.5rem;
+body .mainFotos .fotosMaquillaje .tituloFotos {
+  text-align: center;
+  grid-area: tituloFotos;
 }
- .navHistoria img{
-    max-width: 400px;
-    width: 90%;
- }
- /* ESTILOS PARA EL GRID FOTOS CATRINA */
-.fotosMaquillaje{
-    margin: 2rem 1rem 1rem 1rem;
-    padding: 1rem;
-    height: 50%;
-    background-color: #64ccc5b6;
-    border: 3px solid #176B87;
-    border-radius: 10px;
-    display: grid;
-    grid-template-rows: 0.25fr 6fr; 
-    grid-template-columns: repeat(3, 3fr);
-    grid-template-areas:
-      "titulo_fotos titulo_fotos titulo_fotos"
-      "imagen1 imagen2 parrafo"
+body .mainFotos .fotosMaquillaje .imagen1 {
+  max-width: 90%;
+  grid-area: imagen1;
+  max-width: 98%;
+  margin: 0.5rem;
+  border-radius: 10px;
 }
-.tituloFotos {
-    text-align: center;
-    grid-area: titulo_fotos;
+body .mainFotos .fotosMaquillaje .imagen2 {
+  max-width: 90%;
+  grid-area: imagen2;
+  max-width: 98%;
+  margin: 0.5rem;
+  border-radius: 10px;
 }
-.imagen1 {
-    max-width: 90%;
-    grid-area: imagen1;
+body .mainFotos .fotosMaquillaje .parrafo {
+  grid-area: parrafo;
+  padding: 0.5rem;
 }
-.imagen2 {
-    max-width: 90%;
-    grid-area: imagen2;
+body .mainFotos .fotosBailarinas {
+  margin: 2rem 1rem 1rem 1rem;
+  padding: 1rem;
+  overflow: hidden;
+  height: 50%;
+  background-color: rgba(100, 204, 197, 0.7137254902);
+  border: 3px solid #176B87;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 0.25fr 6fr;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-areas: "tituloFotos tituloFotos tituloFotos" "parrafo imagen1 imagen2";
 }
-.parrafo {
-    grid-area: parrafo;
+body .mainFotos .fotosBailarinas .tituloFotos {
+  text-align: center;
+  grid-area: tituloFotos;
 }
- /* ESTILOS PARA EL GRID FOTOS BAILARINAS */
- .fotosBailarinas{
-    margin: 2rem 1rem 1rem 1rem;
-    padding: 1rem;
-    overflow: hidden;
-    height: 50%;
-    background-color: #64ccc5b6;
-    border: 3px solid #176B87;
-    border-radius: 10px;
-    display: grid;
-    grid-template-rows: 0.25fr 6fr; 
-    grid-template-columns: repeat(3, 3fr);
-    grid-template-areas:
-      "titulo_fotos titulo_fotos titulo_fotos"
-      "parrafo imagen1 imagen2"
+body .mainFotos .fotosBailarinas .imagen1 {
+  grid-area: imagen1;
+  max-width: 98%;
+  margin: 0.5rem;
+  border-radius: 5px;
 }
-.tituloFotos {
-    text-align: center;
-    grid-area: titulo_fotos;
+body .mainFotos .fotosBailarinas .imagen2 {
+  grid-area: imagen2;
+  max-width: 98%;
+  margin: 0.5rem;
+  border-radius: 5px;
 }
-.imagen1 {
-    grid-area: imagen1;
+body .mainFotos .fotosBailarinas .parrafo {
+  grid-area: parrafo;
 }
-.imagen2 {
-    grid-area: imagen2;
+body .mainFotos .fotosPersonajes {
+  margin: 5rem;
+  text-align: center;
 }
-.parrafo {
-    grid-area: parrafo;
+body .mainFotos .fotosPersonajes img {
+  border-radius: 5px;
 }
-.mainFotos img{
-    max-width: 98%;
-    margin: 0.5rem;
+body .mainFotos .fotosAltar {
+  margin: 2rem 1rem 1rem 1rem;
+  height: 50%;
+  gap: 1rem;
+  display: grid;
+  overflow: hidden;
+  grid-template-rows: 2rem repeat(3, 0.5fr);
+  grid-template-columns: repeat(2, 3fr);
+  grid-template-areas: "titulo titulo" "img1 img2" "img3 img4" "parrafo parrafo";
 }
-.fotosPersonajes{
-    margin: 5rem;
-    text-align: center;
+body .mainFotos .fotosAltar h3 {
+  text-align: center;
+  grid-area: titulo;
 }
- /* ESTILOS PARA EL GRID FOTOS ALTAR */
-.fotosAltar{
-    margin: 2rem 1rem 1rem 1rem;
-    height: 50%;
-    gap: 1rem;
-    display: grid;
-    overflow: hidden;
-    grid-template-rows: 2rem repeat(3, 0.5fr); 
-    grid-template-columns: repeat(2, 3fr);
-    grid-template-areas:
-      "titulo titulo"
-      "img1 img2"
-      "img3 img4"
-      "parrafo parrafo"
+body .mainFotos .fotosAltar .img1 {
+  max-width: 95%;
+  grid-area: img1;
+  border-radius: 10px;
 }
-.fotosAltar h3 {
-    text-align: center;
-    grid-area: titulo;
+body .mainFotos .fotosAltar .img2 {
+  max-width: 95%;
+  grid-area: img2;
+  border-radius: 10px;
 }
-.img1 {
-    max-width: 95%;
-    grid-area: img1;
-    border-radius: 10px;
+body .mainFotos .fotosAltar .img3 {
+  max-width: 95%;
+  grid-area: img3;
+  border-radius: 10px;
 }
-.img2 {
-    max-width: 95%;
-    grid-area: img2;
-    border-radius: 10px;
-}.img3 {
-    max-width: 95%;
-    grid-area: img3;
-    border-radius: 10px;
-}.img4 {
-    max-width: 95%;
-    grid-area: img4;
-    border-radius: 10px;
-}.fotosAltar p {
-    text-align: center;
-    grid-area: parrafo;
+body .mainFotos .fotosAltar .img4 {
+  max-width: 95%;
+  grid-area: img4;
+  border-radius: 10px;
 }
+body .mainFotos .fotosAltar p {
+  text-align: center;
+  grid-area: parrafo;
+}
+
 /* ESTILOS PARA LA PAGINA COMUNIDAD */
-.comunidad{
-    display: flex;
+body .comunidad {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem;
+  align-items: center;
+  overflow: hidden;
+}
+body .comunidad div {
+  text-align: center;
+}
+body .comunidad div h2 {
+  text-align: center;
+  font-weight: bolder;
+}
+body .comunidad div #sectionFotosComunidad .fotoComunidad {
+  max-width: 45%;
+  margin: 1%;
+}
+body .comunidad div img {
+  border-radius: 20px;
+  margin: 1rem;
+}
+
+body main .leyenda1 {
+  grid-area: leyenda1;
+  padding: 0.5rem;
+  background-color: rgba(100, 204, 197, 0.7137254902);
+  border: 3px solid #176B87;
+  border-radius: 9px;
+  text-align: center;
+}
+
+body main .leyenda2 {
+  grid-area: leyenda2;
+  padding: 0.5rem;
+  background-color: rgba(100, 204, 197, 0.7137254902);
+  border: 3px solid #176B87;
+  border-radius: 9px;
+  text-align: center;
+}
+
+body main .leyenda3 {
+  grid-area: leyenda3;
+  padding: 0.5rem;
+  background-color: rgba(100, 204, 197, 0.7137254902);
+  border: 3px solid #176B87;
+  border-radius: 9px;
+  text-align: center;
+}
+
+body main .leyenda4 {
+  grid-area: leyenda4;
+  padding: 0.5rem;
+  background-color: rgba(100, 204, 197, 0.7137254902);
+  border: 3px solid #176B87;
+  border-radius: 9px;
+  text-align: center;
+}
+
+body main .leyenda5 {
+  grid-area: leyenda5;
+  padding: 0.5rem;
+  background-color: rgba(100, 204, 197, 0.7137254902);
+  border: 3px solid #176B87;
+  border-radius: 9px;
+  text-align: center;
+}
+
+/* MEDIA QUERY PARA 1200px*/
+@media screen and (max-width: 1200px) {
+  #mainFotos .fotosMaquillaje {
+    grid-template-rows: 0.25fr 1.5fr 0.5fr;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-areas: "titulo_fotos titulo_fotos" "imagen1 imagen2" "parrafo parrafo";
+  }
+  #mainFotos .fotosBailarinas {
+    grid-template-rows: 0.25fr 1fr 0.5fr;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-areas: "titulo_fotos titulo_fotos" "imagen1 imagen2" "parrafo parrafo";
+  }
+  main #sectionAltar #videoAltar {
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 1rem;
-    align-items: center;
-    overflow: hidden;
-}
-.comunidad div{
     text-align: center;
+    align-items: center;
+  }
+  main #sectionAltar #videoAltar p {
+    width: fit-content;
+  }
 }
-#sectionFotosComunidad{
-    display: flex;
+/* PARA LA CEBECERA DE CADA PÁGINA EN MOBILE: index, historias y fotos */
+@media screen and (max-width: 740px) {
+  body {
+    font-size: medium;
+  }
+  body header .navbar {
+    padding: 0.5rem;
+  }
+  body main #principal {
+    grid-template-rows: 0.5fr 2fr 2fr 0.25fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "section1" "section2" "seleccion";
+  }
+  body main #principal #title, body main #principal #section1, body main #principal #section2, body main #principal #seleccion {
+    margin: 1rem;
+  }
+  body main #principal #seleccion {
+    max-width: 300px;
+    font-size: medium;
+    padding: 0.5rem;
+    margin: 0 30% 1rem 30%;
+  }
+  body main #sectionAltar #videoAltar {
+    flex-direction: column;
+    text-align: center;
+  }
+  body main #sectionAltar #videoAltar #video {
+    width: 90%;
+    height: 80vh;
+  }
+  body main #sectionAltar #videoAltar #videoAltar p {
+    width: 90%;
+  }
+  /* ESTILOS PARA HISTORIAS */
+  body main .navHistoria {
+    grid-template-rows: 0.75fr 0.5fr 0.5fr 1fr 0.5fr;
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-template-areas: "leyenda1" "leyenda2" "leyenda3" "leyenda4" "leyenda5";
+  }
+  body #mainFotos .fotosMaquillaje {
+    grid-template-rows: 0.05fr repeat(2, 0.25fr) 0.45fr;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    margin: 1rem;
+    grid-template-areas: "titulo_fotos" "imagen1" "imagen2" "parrafo";
+  }
+  body #mainFotos .fotosBailarinas {
+    grid-template-rows: 0.05fr 0.45fr repeat(2, 0.25fr);
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    margin: 1rem;
+    grid-template-areas: "titulo_fotos" "parrafo" "imagen1" "imagen2";
+  }
+  body #mainFotos .fotosAltar {
+    grid-template-rows: repeat(5, 0.25fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "img1" "img2" "img3" "img4" "parrafo";
+  }
+  body .comunidad {
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-basis: 90%;
+  }
 }
-.fotoComunidad{
-    max-width:45%;
-}
-.comunidad h2{
-    text-align: center;
-    font-weight: bolder;
-}
-div img{
-    border-radius: 20px;
-    margin: 1rem;
-}
-/* ESTILOS PARA LA PAGINA CONTACTOS */
-.menuContacto{
+@media screen and (max-width: 530px) {
+  p, li {
+    font-size: small;
+  }
+  h1, h2, h3 {
+    font-size: medium;
+  }
+  #seleccion {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 2rem;
+    max-width: 300px;
+    font-size: medium;
+    padding: 1rem;
+    margin: 0 20% 1rem 20%;
+  }
 }
-fieldset{
-    margin: 2rem 0 2rem 0;
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
+#pie {
+  border-top: 3px solid #176B87;
+  border-bottom: 3px solid #176B87;
+  padding: 5px;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  color: #055160;
+  font-weight: bold;
 }
-#comentario{
-    max-width: 99%;
+#pie #botonPie {
+  width: 100px;
+  height: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 15px;
+  border-bottom: outset;
 }
-.textoMaiz{
-    padding: 1rem 0 1rem 0;
-    border-top: 2px solid #001C30;
+#pie #botonPie:hover {
+  color: #64CCC5;
+  width: 7rem;
+  border-color: #64CCC5;
+  background-color: #001C30;
 }
-.menuContacto h5{
-    text-align: center;
-    font-size: x-large;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+#pie div a img {
+  height: 50px;
 }
-#comentario:hover{
-    border-radius: 5px;
-    border:3px solid #001C30;    
-}
-/* MEDIA QUERY PARA 1200px*/
-@media (max-width: 1200px){
-    .fotosMaquillaje{
-        grid-template-rows: 0.25fr 1.5fr 0.5fr; 
-        grid-template-columns: repeat(2, 3fr);
-        grid-template-areas:
-          "titulo_fotos titulo_fotos"
-          "imagen1 imagen2"
-          "parrafo parrafo"
-    }
-    .fotosBailarinas{
-        grid-template-rows: 0.25fr 1fr 0.5fr; 
-        grid-template-columns: repeat(2, 3fr);
-        grid-template-areas:
-          "titulo_fotos titulo_fotos"
-          "imagen1 imagen2"
-          "parrafo parrafo"
-    }
-    #videoAltar{
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    #videoAltar p{
-        width: fit-content;
-    }
-}     
-/* PARA LA CEBECERA DE CADA PÁGINA EN MOBILE: index, historias y fotos */
-@media (max-width: 740px){
-    body{
-        font-size: medium;
-    }
-    .navbar{
-        padding: 0.5rem;
-    }
-    /* ESTILOS PARA EL GRID DE INDEX */
-    #principal{
-        grid-template-rows: 0.5fr 2fr 2fr 0.25fr; 
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "title"
-        "section1"
-        "section2"
-        "seleccion"
-    }
-    #title{
-        margin: 1rem;
-    }
-    #seleccion {
-        max-width: 300px;
-        font-size: medium;
-        padding: 0.5rem;
-        margin: 0 30% 1rem 30%;
-    }
-    #videoAltar{
-        flex-direction: column;
-        text-align: center;
-    }
-    #video{
-        width: 90%;
-    }
-    #videoAltar p{
-        width: 90%;
-    }
-    .navHistoria{
-        grid-template-rows: 0.75fr 0.5fr 0.5fr 1fr 0.5fr; 
-        grid-template-columns: 1fr;
-        text-align: center;
-        grid-template-areas:
-          "leyenda1"
-          "leyenda2"
-          "leyenda3"
-          "leyenda4"
-          "leyenda5"
-    }
-    .fotosMaquillaje{
-        grid-template-rows: 0.05fr repeat(2, 0.25fr) 0.45fr; 
-        grid-template-columns: 1fr;
-        padding: 1rem;
-        margin: 1rem;
-        grid-template-areas:
-          "titulo_fotos"
-          "imagen1" 
-          "imagen2" 
-          "parrafo"
-    }
-    .fotosBailarinas{
-        grid-template-rows: 0.05fr 0.45fr repeat(2, 0.25fr); 
-        grid-template-columns: 1fr;
-        padding: 1rem;
-        margin: 1rem;
-        grid-template-areas:
-          "titulo_fotos"
-          "parrafo"
-          "imagen1"
-          "imagen2"
-    }
-    .fotosAltar{
-        grid-template-rows: repeat(5, 0.25fr); 
-        grid-template-columns: 1fr;
-        grid-template-areas:
-          "titulo"
-          "img1"
-          "img2"
-          "img3"
-          "img4"
-          "parrafo"
-    }
-    .comunidad{
-        flex-direction: row;
-        justify-content: center;
-        flex-basis: 90%;
-    }
-    .fotoComunidad{
-        max-width:85%;
-    }
-}
-@media (max-width: 530px){
-    p, li{
-        font-size: small;
-    }
-    h1, h2, h3{
-        font-size: medium;
-    }
-    #seleccion {
-        display: flex;
-        flex-direction: column;
-        max-width: 300px;
-        font-size: medium;
-        padding: 1rem;
-        margin: 0 20% 1rem 20%;
-    }
-}
-/* ESTILOS PARA EL PIE DE PAGINA */
-#pie{
-    border-top: 3px solid #176B87;
-    border-bottom: 3px solid #176B87;
-    padding: 5px;
-    background-color:rgb(0, 0, 0);
-    text-align: center; 
-    color:#055160;
-    font-weight: bold;
-}
-#pie a img{
-    height: 50px;
-}
-#botonForm{
-    width: 80px;
-    height: 25px;
-    font-size: 0.8rem;
-    border-radius: 5px;
-    border-bottom:ridge
-}
-#botonPie{
-    width: 100px;
-    height: 30px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 15px;
-    border-bottom: outset;
-}
-#botonPie:hover{
-    color:#64CCC5;
-    width: 7rem;
-    border-color:#64CCC5;
-    background-color: #001C30;
+#pie div a img:hover {
+  border: 3px solid #176B87;
+  border-radius: 50px;
 }
 
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,21 @@
+@import "./modules/variables";
+@import "./modules/mixins";
+@import "./modules/body";
+@import "./modules/header";
+@import "./modules/pages/index.scss";
+@import "./modules/extends";
+@import "./modules/pages/historias.scss";
+@import "./modules/pages/fotos.scss";
+@import "./modules/pages/comunidad.scss";
+@import "./modules/bucles";
+@import "./modules/condicionales";
+
+
+
+@import "./modules/footer";
+html{
+    @include reset
+}
+
+
+

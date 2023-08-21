@@ -1,0 +1,10 @@
+@mixin reset {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@mixin bordeSections{
+    background-color: $colorBgSection;
+    border: $borde solid $colorBorder;
+    border-radius: $borde*3;
+}

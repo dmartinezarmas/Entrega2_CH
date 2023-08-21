@@ -1,0 +1,8 @@
+@for $i from 1 to 6{
+    body main .leyenda#{$i}{
+        grid-area: leyenda+$i;
+        padding: 0.5rem;
+        @include bordeSections;
+        text-align: center;
+    }
+}

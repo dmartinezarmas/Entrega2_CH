@@ -1,0 +1,30 @@
+// ESTILOS PARA HISTORIAS
+body{
+    main{
+        .musica{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 2%;
+        }
+        .navHistoria{
+            height: 70%;
+            margin: 4%;
+            gap: 1rem;
+            display: grid;
+            grid-template-rows: 0.25fr 0.5fr 1fr 0.25fr ; 
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+              "leyenda1 leyenda1"
+              "leyenda2 leyenda3"
+              "leyenda4 leyenda4"
+              "leyenda5 leyenda5";
+            img{
+                max-width: 400px;
+                width: 90%;
+                border-radius: $borde;
+            }
+        }
+    }
+}
+

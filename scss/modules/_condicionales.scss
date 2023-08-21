@@ -1,0 +1,157 @@
+$vista: desktop;
+@if $vista == desktop {
+    /* MEDIA QUERY PARA 1200px*/
+    @media screen and (max-width: 1200px){
+        #mainFotos{
+            .fotosMaquillaje{
+                grid-template-rows: 0.25fr 1.5fr 0.5fr; 
+                grid-template-columns: repeat(2, 3fr);
+                grid-template-areas:
+                "titulo_fotos titulo_fotos"
+                "imagen1 imagen2"
+                "parrafo parrafo"
+            }
+            .fotosBailarinas{
+                grid-template-rows: 0.25fr 1fr 0.5fr; 
+                grid-template-columns: repeat(2, 3fr);
+                grid-template-areas:
+                "titulo_fotos titulo_fotos"
+                "imagen1 imagen2"
+                "parrafo parrafo"
+            }
+        }
+        main{
+            #sectionAltar{
+                #videoAltar{
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                    p{
+                        width: fit-content;
+                    }
+                }
+            }
+        }
+    }     
+
+    /* PARA LA CEBECERA DE CADA PÁGINA EN MOBILE: index, historias y fotos */
+    @media screen and (max-width: 740px){
+        body{
+            font-size: medium;
+            header{
+                .navbar{
+                    padding: 0.5rem;
+                }
+            }
+            main{
+                #principal{
+                    grid-template-rows: 0.5fr 2fr 2fr 0.25fr; 
+                    grid-template-columns: 1fr;
+                    grid-template-areas:
+                    "title"
+                    "section1"
+                    "section2"
+                    "seleccion";
+                    #title{
+                        margin: 1rem;
+                    }
+                    #seleccion {
+                        max-width: 300px;
+                        font-size: medium;
+                        padding: 0.5rem;
+                        margin: 0 30% 1rem 30%;
+                    }
+                }
+                #sectionAltar{
+                    #videoAltar{
+                        flex-direction: column;
+                        text-align: center;
+                        #video{
+                            width: 90%;
+                            height: 80vh;
+                        }
+                        #videoAltar p{
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+        /* ESTILOS PARA HISTORIAS */
+        body{
+            main{
+                .navHistoria{
+                    grid-template-rows: 0.75fr 0.5fr 0.5fr 1fr 0.5fr; 
+                    grid-template-columns: 1fr;
+                    text-align: center;
+                    grid-template-areas:
+                    "leyenda1"
+                    "leyenda2"
+                    "leyenda3"
+                    "leyenda4"
+                    "leyenda5"
+                }
+            }
+        }
+        body{
+            #mainFotos{
+                .fotosMaquillaje{
+                    grid-template-rows: 0.05fr repeat(2, 0.25fr) 0.45fr; 
+                    grid-template-columns: 1fr;
+                    padding: 1rem;
+                    margin: 1rem;
+                    grid-template-areas:
+                    "titulo_fotos"
+                    "imagen1" 
+                    "imagen2" 
+                    "parrafo"
+                }
+                .fotosBailarinas{
+                    grid-template-rows: 0.05fr 0.45fr repeat(2, 0.25fr); 
+                    grid-template-columns: 1fr;
+                    padding: 1rem;
+                    margin: 1rem;
+                    grid-template-areas:
+                    "titulo_fotos"
+                    "parrafo"
+                    "imagen1"
+                    "imagen2"
+                }
+                .fotosAltar{
+                    grid-template-rows: repeat(5, 0.25fr); 
+                    grid-template-columns: 1fr;
+                    grid-template-areas:
+                    "titulo"
+                    "img1"
+                    "img2"
+                    "img3"
+                    "img4"
+                    "parrafo"
+                }
+            }
+        }
+        body{
+            .comunidad{
+                flex-direction: row;
+                justify-content: center;
+                flex-basis: 90%;
+            }
+        }
+    }
+    @media screen and (max-width: 530px){
+        p, li{
+            font-size: small;
+        }
+        h1, h2, h3{
+            font-size: medium;
+        }
+        #seleccion {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            font-size: medium;
+            padding: 1rem;
+            margin: 0 20% 1rem 20%;
+        }
+    }
+}

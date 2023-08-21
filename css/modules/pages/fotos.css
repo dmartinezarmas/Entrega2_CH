@@ -1,3 +1,114 @@
-
+/* ESTILOS PARA EL GRID FOTOS CATRINA */
+body .mainFotos .fotosMaquillaje {
+  margin: 2rem 1rem 1rem 1rem;
+  padding: 1rem;
+  height: 50%;
+  background-color: rgba(100, 204, 197, 0.7137254902);
+  border: 3px solid #176B87;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 0.25fr 6fr;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-areas: "tituloFotos tituloFotos tituloFotos" "imagen1 imagen2 parrafo";
+}
+body .mainFotos .fotosMaquillaje .tituloFotos {
+  text-align: center;
+  grid-area: tituloFotos;
+}
+body .mainFotos .fotosMaquillaje .imagen1 {
+  max-width: 90%;
+  grid-area: imagen1;
+  max-width: 98%;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+body .mainFotos .fotosMaquillaje .imagen2 {
+  max-width: 90%;
+  grid-area: imagen2;
+  max-width: 98%;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+body .mainFotos .fotosMaquillaje .parrafo {
+  grid-area: parrafo;
+  padding: 0.5rem;
+}
+body .mainFotos .fotosBailarinas {
+  margin: 2rem 1rem 1rem 1rem;
+  padding: 1rem;
+  overflow: hidden;
+  height: 50%;
+  background-color: rgba(100, 204, 197, 0.7137254902);
+  border: 3px solid #176B87;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 0.25fr 6fr;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-areas: "tituloFotos tituloFotos tituloFotos" "parrafo imagen1 imagen2";
+}
+body .mainFotos .fotosBailarinas .tituloFotos {
+  text-align: center;
+  grid-area: tituloFotos;
+}
+body .mainFotos .fotosBailarinas .imagen1 {
+  grid-area: imagen1;
+  max-width: 98%;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+body .mainFotos .fotosBailarinas .imagen2 {
+  grid-area: imagen2;
+  max-width: 98%;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+body .mainFotos .fotosBailarinas .parrafo {
+  grid-area: parrafo;
+}
+body .mainFotos .fotosPersonajes {
+  margin: 5rem;
+  text-align: center;
+}
+body .mainFotos .fotosPersonajes img {
+  border-radius: 5px;
+}
+body .mainFotos .fotosAltar {
+  margin: 2rem 1rem 1rem 1rem;
+  height: 50%;
+  gap: 1rem;
+  display: grid;
+  overflow: hidden;
+  grid-template-rows: 2rem repeat(3, 0.5fr);
+  grid-template-columns: repeat(2, 3fr);
+  grid-template-areas: "titulo titulo" "img1 img2" "img3 img4" "parrafo parrafo";
+}
+body .mainFotos .fotosAltar h3 {
+  text-align: center;
+  grid-area: titulo;
+}
+body .mainFotos .fotosAltar .img1 {
+  max-width: 95%;
+  grid-area: img1;
+  border-radius: 10px;
+}
+body .mainFotos .fotosAltar .img2 {
+  max-width: 95%;
+  grid-area: img2;
+  border-radius: 10px;
+}
+body .mainFotos .fotosAltar .img3 {
+  max-width: 95%;
+  grid-area: img3;
+  border-radius: 10px;
+}
+body .mainFotos .fotosAltar .img4 {
+  max-width: 95%;
+  grid-area: img4;
+  border-radius: 10px;
+}
+body .mainFotos .fotosAltar p {
+  text-align: center;
+  grid-area: parrafo;
+}
 
 /*# sourceMappingURL=fotos.css.map */
