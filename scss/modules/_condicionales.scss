@@ -31,7 +31,7 @@ $vista3: 530;
                     text-align: center;
                     align-items: center;
                     p{
-                        width: fit-content;
+                        width: 80%;
                     }
                 }
             }
@@ -50,7 +50,7 @@ $vista3: 530;
             }
             main{
                 #principal{
-                    grid-template-rows: 0.25fr 1fr 1.5fr 0.05fr; 
+                    grid-template-rows: 0.25fr 0.75fr 1fr 0.05fr; 
                     grid-template-columns: 1fr;
                     grid-template-areas:
                     "title"

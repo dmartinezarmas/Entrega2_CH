@@ -60,26 +60,29 @@ body main #principal #title h2, body main #principal #seleccion h2, body main #p
   font-weight: bolder;
 }
 body main #principal #section1 a img {
-  max-width: 50%;
+  max-width: 70%;
 }
 body main #sectionAltar {
   margin: 1rem;
+  text-align: center;
 }
 body main #sectionAltar #videoAltar {
   display: flex;
   text-align: center;
   border-radius: 6px;
   margin: 0 1rem 2rem 1rem;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 body main #sectionAltar #videoAltar #video {
-  width: 55%;
-  height: 60vh;
-  margin-top: 0;
+  height: 50vh;
+  margin-top: 1rem;
   margin: 0 1rem 0 1rem;
 }
 body main #sectionAltar #videoAltar p {
-  width: 40%;
-  margin-top: 0;
+  height: 40%;
+  margin-top: 1rem;
   margin: 0 1rem 0 1rem;
 }
 
@@ -420,7 +423,7 @@ body main .leyenda5 {
     align-items: center;
   }
   main #sectionAltar #videoAltar p {
-    width: fit-content;
+    width: 80%;
   }
 }
 /* MEDIA QUERY PARA 740px*/
@@ -432,7 +435,7 @@ body main .leyenda5 {
     padding: 0.5rem;
   }
   body main #principal {
-    grid-template-rows: 0.25fr 1fr 1.5fr 0.05fr;
+    grid-template-rows: 0.25fr 0.75fr 1fr 0.05fr;
     grid-template-columns: 1fr;
     grid-template-areas: "title" "section1" "section2" "seleccion";
   }

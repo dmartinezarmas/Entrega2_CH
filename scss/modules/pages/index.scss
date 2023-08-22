@@ -29,27 +29,30 @@ body{
             #section1{
                 a{
                     img{
-                        max-width: 50%;
+                        max-width: 70%;
                     }
                 }
             }    
         }
         #sectionAltar{
             margin: 1rem;
+            text-align: center;
             #videoAltar{
                 display: flex;
                 text-align: center;
                 border-radius: $borde*2;
                 margin: 0 1rem 2rem 1rem;
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
                 #video{
-                    width: 55%;
-                    height: 60vh;
-                    margin-top: 0;
+                    height: 50vh;
+                    margin-top: 1rem;
                     margin: 0 1rem 0 1rem;
                 }
                 p{
-                    width: 40%; 
-                    margin-top: 0;
+                    height: 40%;
+                    margin-top: 1rem;
                     margin: 0 1rem 0 1rem;
                 }
             }
