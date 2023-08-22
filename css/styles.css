@@ -41,41 +41,43 @@ header {
   border-bottom: 3px solid #176B87;
 }
 
-header nav div #textoHeader {
+body {
+  overflow: hidden;
+}
+body header nav div #textoHeader {
   background: linear-gradient(to right, green, white, red);
   -webkit-background-clip: text;
   color: transparent;
 }
-
-main #principal {
+body main #principal {
   height: 70%;
   display: grid;
   grid-template-rows: 0.25fr 3fr 0.25fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "title title" "section1 section2" "seleccion seleccion";
 }
-main #principal #title h2, main #principal #seleccion h2, main #principal #section2 h2, main #principal #section1 h2 {
+body main #principal #title h2, body main #principal #seleccion h2, body main #principal #section2 h2, body main #principal #section1 h2 {
   font-weight: bolder;
 }
-main #principal #section1 a img {
+body main #principal #section1 a img {
   max-width: 50%;
 }
-main #sectionAltar {
+body main #sectionAltar {
   margin: 1rem;
 }
-main #sectionAltar #videoAltar {
+body main #sectionAltar #videoAltar {
   display: flex;
   text-align: center;
   border-radius: 6px;
   margin: 0 1rem 2rem 1rem;
 }
-main #sectionAltar #videoAltar #video {
+body main #sectionAltar #videoAltar #video {
   width: 55%;
   height: 60vh;
   margin-top: 0;
   margin: 0 1rem 0 1rem;
 }
-main #sectionAltar #videoAltar p {
+body main #sectionAltar #videoAltar p {
   width: 40%;
   margin-top: 0;
   margin: 0 1rem 0 1rem;
@@ -117,6 +119,9 @@ main #sectionAltar #videoAltar p {
   padding: 0.5rem;
 }
 
+body {
+  overflow: hidden;
+}
 body main .musica {
   display: flex;
   align-items: center;
@@ -139,6 +144,9 @@ body main .navHistoria img {
 }
 
 /* ESTILOS PARA EL GRID FOTOS CATRINA */
+body {
+  overflow: hidden;
+}
 body .mainFotos .fotosMaquillaje {
   margin: 2rem 1rem 1rem 1rem;
   padding: 1rem;
@@ -266,6 +274,9 @@ body .mainFotos .fotosAltar p {
 }
 
 /* ESTILOS PARA LA PAGINA COMUNIDAD */
+body {
+  overflow: hidden;
+}
 body .comunidad {
   display: flex;
   flex-direction: column;
@@ -302,6 +313,9 @@ body .comunidad div img {
 }
 
 /* ESTILOS PARA LA PAGINA CONTACTOS */
+body {
+  overflow: hidden;
+}
 body .menuContacto {
   display: flex;
   flex-direction: column;

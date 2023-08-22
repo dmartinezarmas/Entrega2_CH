@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *    ,
- * 25 |                 border-radius: $borde;
+ * 26 |                 border-radius: $borde;
  *    |                                ^^^^^^
  *    '
- *   scss\modules\pages\historias.scss 25:32  root stylesheet */
+ *   scss\modules\pages\historias.scss 26:32  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 25 \2502                  border-radius: $borde;\d\a    \2502                                 ^^^^^^\a    \2575 \a   scss\\modules\\pages\\historias.scss 25:32  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 26 \2502                  border-radius: $borde;\d\a    \2502                                 ^^^^^^\a    \2575 \a   scss\\modules\\pages\\historias.scss 26:32  root stylesheet";
 }

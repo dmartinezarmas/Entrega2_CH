@@ -1,54 +1,57 @@
-header{
-    nav{
-        div{
-            #textoHeader{
-                background: linear-gradient(to right, green,white,red);
-                -webkit-background-clip: text;
-                color: transparent;
-            }
-        }
-    }
-}
-main{
-    #principal{
-        height: 70%;
-        display: grid;
-        grid-template-rows: 0.25fr 3fr 0.25fr; 
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "title title"
-            "section1 section2"
-            "seleccion seleccion";
-        #title{
-            h2{
-                font-weight: bolder;
-            }
-        }
-        #section1{
-            a{
-                img{
-                    max-width: 50%;
+body{
+    overflow: hidden;
+    header{
+        nav{
+            div{
+                #textoHeader{
+                    background: linear-gradient(to right, green,white,red);
+                    -webkit-background-clip: text;
+                    color: transparent;
                 }
             }
-        }    
+        }
     }
-    #sectionAltar{
-        margin: 1rem;
-        #videoAltar{
-            display: flex;
-            text-align: center;
-            border-radius: $borde*2;
-            margin: 0 1rem 2rem 1rem;
-            #video{
-                width: 55%;
-                height: 60vh;
-                margin-top: 0;
-                margin: 0 1rem 0 1rem;
+    main{
+        #principal{
+            height: 70%;
+            display: grid;
+            grid-template-rows: 0.25fr 3fr 0.25fr; 
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "title title"
+                "section1 section2"
+                "seleccion seleccion";
+            #title{
+                h2{
+                    font-weight: bolder;
+                }
             }
-            p{
-                width: 40%; 
-                margin-top: 0;
-                margin: 0 1rem 0 1rem;
+            #section1{
+                a{
+                    img{
+                        max-width: 50%;
+                    }
+                }
+            }    
+        }
+        #sectionAltar{
+            margin: 1rem;
+            #videoAltar{
+                display: flex;
+                text-align: center;
+                border-radius: $borde*2;
+                margin: 0 1rem 2rem 1rem;
+                #video{
+                    width: 55%;
+                    height: 60vh;
+                    margin-top: 0;
+                    margin: 0 1rem 0 1rem;
+                }
+                p{
+                    width: 40%; 
+                    margin-top: 0;
+                    margin: 0 1rem 0 1rem;
+                }
             }
         }
     }
