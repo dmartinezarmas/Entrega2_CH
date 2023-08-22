@@ -42,7 +42,7 @@ header {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body header nav div #textoHeader {
   background: linear-gradient(to right, green, white, red);
@@ -120,7 +120,7 @@ main #sectionAltar #videoAltar p {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body main .musica {
   display: flex;
@@ -145,7 +145,7 @@ body main .navHistoria img {
 
 /* ESTILOS PARA EL GRID FOTOS CATRINA */
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body .mainFotos .fotosMaquillaje {
   margin: 2rem 1rem 1rem 1rem;
@@ -275,7 +275,7 @@ body .mainFotos .fotosAltar p {
 
 /* ESTILOS PARA LA PAGINA COMUNIDAD */
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body .comunidad {
   display: flex;
@@ -314,7 +314,7 @@ body .comunidad div img {
 
 /* ESTILOS PARA LA PAGINA CONTACTOS */
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body .menuContacto {
   display: flex;
