@@ -89,8 +89,7 @@ body main #sectionAltar #videoAltar p {
 main #principal #title, main #principal #seleccion, main #principal #section2, main #principal #section1 {
   text-align: center;
   grid-area: title;
-  padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
   background-color: rgba(100, 204, 197, 0.7137254902);
   border: 3px solid #176B87;
   border-radius: 9px;
