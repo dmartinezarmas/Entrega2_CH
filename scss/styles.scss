@@ -1,5 +1,5 @@
-@import "./modules/mixins";
 @import "./modules/variables";
+@import "./modules/mixins";
 @import "./modules/body";
 @import "./modules/header";
 @import "./modules/pages/index.scss";
@@ -10,6 +10,7 @@
 @import "./modules/pages/contacto.scss";
 @import "./modules/bucles";
 @import "./modules/condicionales";
+@import "./modules/pages/404.scss";
 
 
 

@@ -22,20 +22,27 @@ body{
                 "section1 section2"
                 "seleccion seleccion";
             #title{
-                h2{
+                div{
+                    display: flex;
+                }
+                img{
+                    max-width: 10%;
+                }
+                h1{
                     font-weight: bolder;
                 }
             }
             #section1{
                 a{
                     img{
-                        max-width: 70%;
+                        max-width: 60%;
                     }
                 }
             }
         }
         #sectionAltar{
-            margin: 1rem;
+            background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);   
+            padding: 1rem;
             text-align: center;
             #videoAltar{
                 display: flex;
@@ -48,12 +55,10 @@ body{
                 #video{
                     height: 50vh;
                     margin-top: 1rem;
-                    margin: 0 1rem 0 1rem;
                 }
                 p{
                     height: 40%;
                     margin-top: 1rem;
-                    margin: 0 1rem 0 1rem;
                 }
             }
         }

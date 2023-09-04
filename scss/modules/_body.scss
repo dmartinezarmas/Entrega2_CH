@@ -1,4 +1,5 @@
 body{
+    font-size: larger;
     animation-name: bgDiego;
     transition: all 5s;
     animation-iteration-count: infinite;
@@ -7,8 +8,12 @@ body{
     padding-top: $borde*3;
     padding-bottom: $borde*3;
     font-family: "average";
-    h1, h2{
+    h1, h2, h3, h4{
         font-weight: bold;
+        font-family: bebas neue;
+    }
+    a{
+        text-decoration: none;
     }
 }
 @keyframes bgDiego{

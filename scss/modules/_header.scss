@@ -1,4 +1,28 @@
 header {
-    border-top: $borde solid $colorBorder;
-    border-bottom: $borde solid $colorBorder;
+    position: sticky;
+    top: 0;
+    animation: adjustHeader linear both;
+    animation-timeline: scroll();
+    animation-range:0 2000px;
+    nav{
+        height: 5rem;
+        div{
+            div{
+                ul{
+                    li{
+                        a{
+                            &:hover{
+                                color: chartreuse !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes adjustHeader{
+    to {
+        font-size: 0.75rem;
+    }
 }

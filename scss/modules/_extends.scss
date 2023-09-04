@@ -5,13 +5,17 @@ main{
             grid-area: title;
             padding: 1rem;
             margin: 1rem;
-            @include bordeSections;
             h2{
                 font-weight: bolder;
             }
         }
         #section1{
+            @include bordeSections;
             @extend #title;
+            text-align: center;
+            grid-area: title;
+            padding: 1rem;
+            margin: 1rem;
             grid-area: section1;
             a{
                 img{
@@ -20,7 +24,7 @@ main{
             }
         }    
         #section2{
-            @extend #title;
+            @extend #section1;
             grid-area: section2;
         }
         #seleccion{
@@ -29,15 +33,14 @@ main{
             grid-area: seleccion;
             max-width: 500px;
             font-size: x-large;
-            margin: 0 30% 1rem 30%;
+            margin: 2rem 30% 1rem 30%;
         }
     }
     #sectionAltar{
+        
         #videoAltar{
             p{
                 text-align: left;
-                @include bordeSections;
-                padding: 0.5rem;
             }
         }
     }
