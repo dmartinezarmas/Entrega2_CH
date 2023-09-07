@@ -47,16 +47,16 @@ body{
             padding: 1rem;
             overflow: hidden;
             height: 50%;
-            background-color: #64ccc5b6;
+            background-color: $bgrosa;
             display: grid;
-            grid-template-rows: 0.25fr 6fr; 
+            grid-template-rows: 0.25fr 3fr; 
             grid-template-columns: repeat(3, 3fr);
             grid-template-areas:
-              "tituloFotos tituloFotos tituloFotos"
-              "parrafo imagen1 imagen2";
+              "tituloFotos tituloFotos parrafo"
+              "imagen1 imagen2 parrafo";
             .tituloFotos {
-                margin-bottom: 1.5rem;
-                text-align: center;
+                margin: 1rem 0 2rem 1rem;
+                text-align: left;
                 grid-area: tituloFotos;
             }
             .imagen1 {
@@ -81,6 +81,8 @@ body{
             }
             .parrafo {
                 grid-area: parrafo;
+                padding: 1rem;
+                margin-top: 0rem;
             }
         }
         .fotosPersonajes{
@@ -92,7 +94,7 @@ body{
             }
         }
         .fotosAltar{
-            margin: 2rem 1rem 1rem 1rem;
+            margin: 2rem 0rem 1rem 0rem;
             height: 50%;
             gap: 1rem;
             display: grid;
@@ -108,8 +110,15 @@ body{
                 text-align: center;
                 grid-area: titulo;
             }
+            img{
+                transition: transform 1s;
+                &:hover{
+                    transform: scale(0.8);
+                }
+            }
             .img1 {
                 max-width: 95%;
+                margin-left: 2rem;
                 grid-area: img1;
                 border-radius: $borde*3;
             }
@@ -120,6 +129,7 @@ body{
             }
             .img3 {
                 max-width: 95%;
+                margin-left: 2rem;
                 grid-area: img3;
                 border-radius: $borde*3;
             }
@@ -131,10 +141,8 @@ body{
             p {
                 text-align: center;
                 grid-area: parrafo;
-                @include bordeSections;
-                padding: 1rem;
-                margin: 0.5rem;
-                border-top: $borde solid $colorBorder;
+                background-color: $bgrosa;
+                padding: 2rem;
             }
             
         }

@@ -1,11 +1,8 @@
 #pie{
-    border-top: $borde solid $colorBorder;
-    border-bottom: $borde solid $colorBorder;
-    padding: 5px;
-    background: radial-gradient(ellipse 70% 100%, black, #001C30, #055160);
+    padding: 1rem 0;
+    background: rgb(33,37,41);
     text-align: center; 
-    color:$colorTextoPie;
-    font-weight: bold;
+    color:#EBEF95;
     #botonPie{
         width: 100px;
         height: 30px;
@@ -16,10 +13,9 @@
         border-bottom: outset;
         transition: transform 0.3s;
         &:hover{
-            color: $colorHoverBotonPie;
             width: 7rem;
-            border-color:$colorHoverBotonPie;
-            background-color: $colorLineaYBordeContacto;
+            border-color:#EBEF95;
+            background-color: #EF9595;
             transform: scale(1.2, 1.2);
         }
     }

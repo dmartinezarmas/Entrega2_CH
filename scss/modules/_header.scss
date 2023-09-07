@@ -1,10 +1,20 @@
 header {
+    nav{
+        div{
+            #textoHeader{
+                background: linear-gradient(to right, green,white,red);
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+        }
+    }
     position: sticky;
+    z-index: 1;
     top: 0;
     animation: adjustHeader linear both;
     animation-timeline: scroll();
     animation-range:0 2000px;
-    nav{
+    .navbar{
         height: 5rem;
         div{
             div{
@@ -12,7 +22,7 @@ header {
                     li{
                         a{
                             &:hover{
-                                color: chartreuse !important;
+                                color: #EF9595 !important;
                             }
                         }
                     }

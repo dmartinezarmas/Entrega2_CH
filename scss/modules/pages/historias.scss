@@ -8,10 +8,14 @@ body{
             align-items: center;
             flex-direction: row;
             margin-top: 2%;
-            max-height: 15rem;
+            max-height: 35vh;
             overflow: hidden;
             img{
-                max-height: 16rem;
+                max-height: 40vh;
+                transition: transform 1s;
+                &:hover{
+                    transform: scale(1.5);
+                }
             }
             div{
                 display: flex;

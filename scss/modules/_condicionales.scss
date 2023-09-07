@@ -50,15 +50,26 @@ $vista3: 530;
             }
             main{
                 #principal{
-                    grid-template-rows: 0.25fr 0.75fr 1fr 0.05fr; 
-                    grid-template-columns: 1fr;
-                    grid-template-areas:
-                    "title"
-                    "section1"
-                    "section2"
-                    "seleccion";
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     #title{
+                        div{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            img{
+                                width: 30%;
+
+                            }
+                        }
                         margin: 1rem;
+                    }
+                    #section1{
+                        max-width: 95vw;
+                    }
+                    #section2{
+                        max-width: 95vw;
                     }
                     #seleccion {
                         max-width: 300px;
@@ -85,6 +96,21 @@ $vista3: 530;
         /* ESTILOS PARA HISTORIAS */
         body{
             main{
+                .musica{
+                    max-height: 35vh;
+                    img{
+                        height: 100%;
+                    }
+                    div{
+                        padding: 1rem;
+                        margin: 0;
+                        width: 30%;
+                        audio{
+                            width: 100%;
+                        }
+                    }
+
+                }
                 .navHistoria{
                     grid-template-rows: 0.75fr 0.5fr 0.5fr 1fr 0.5fr; 
                     grid-template-columns: 1fr;
@@ -102,43 +128,32 @@ $vista3: 530;
         body{
             .mainFotos{
                 .fotosMaquillaje{
-                    grid-template-rows: 0.05fr repeat(2, 0.25fr) 0.45fr; 
-                    grid-template-columns: 1fr;
+                    display: flex;
+                    flex-direction: column;
                     padding: 1rem;
                     margin: 1rem;
-                    grid-template-areas:
-                    "tituloFotos"
-                    "imagen1" 
-                    "imagen2" 
-                    "parrafo"
                 }
                 .fotosBailarinas{
-                    grid-template-rows: 0.05fr 0.45fr repeat(2, 0.25fr); 
-                    grid-template-columns: 1fr;
+                    display: flex;
+                    flex-direction: column;
                     padding: 1rem;
                     margin: 1rem;
-                    grid-template-areas:
-                    "tituloFotos"
-                    "parrafo"
-                    "imagen1"
-                    "imagen2"
                 }
                 .fotosAltar{
-                    grid-template-rows: repeat(5, 0.25fr); 
-                    grid-template-columns: 1fr;
-                    grid-template-areas:
-                    "titulo"
-                    "img1"
-                    "img2"
-                    "img3"
-                    "img4"
-                    "parrafo"
+                    display: flex;
+                    flex-direction: column;
+                    padding: 2rem;
+                    margin: 1rem;
+                    .img1, .img3{
+                        margin: 0;
+                    }
                 }
                 .fotosPersonajes{
                     margin: 2rem;
                 }
             }
         }
+        /* ESTILOS PARA COMUNIDAD */
         body{
             .comunidad{
                 div{
@@ -158,6 +173,27 @@ $vista3: 530;
                 }
             }
         }
+        /* ESTILOS PARA CONTACTO */
+        .textoMaiz{
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width:fit-content;
+                }
+            }
+        }
+        .apoyo{
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width:fit-content;
+                }
+            }
+        }
     }
 }
 @if $vista3 == 530 {
@@ -171,9 +207,6 @@ $vista3: 530;
                     font-size: small;
                 }
             }
-            h1, h2, h3, h4{
-                font-size: medium;
-            }
             main{
                 #seleccion {
                     display: flex;
@@ -184,6 +217,20 @@ $vista3: 530;
             .mainFotos{
                 .fotosPersonajes{
                         margin: 1rem;
+                }
+            }
+        }
+        /* ESTILOS PARA HISTORIAS */
+        main{
+            .musica{
+                h1{
+                    font-size: 1rem;
+                }
+                img{
+                    width: 7rem;
+                }
+                div{
+                    height: 9rem;
                 }
             }
         }

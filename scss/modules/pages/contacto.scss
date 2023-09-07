@@ -5,53 +5,66 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 2rem;
         fieldset{
             margin: 2rem 0 2rem 0;
             max-width: 80%;
             display: flex;
             flex-direction: column;
             legend{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
                 text-align: center;
+                img{
+                    max-width: 20%;
+                    &:hover{
+                        background-color: rgba(0, 0, 0, 0.103);
+                    }
+                }
             }
             form{
-                background-image: linear-gradient(to right, #96fbc4 0%, #f9f586 100%);
+                background-color: rgb(33,37,41);
+                color: $bgrosa;
                 padding: 2rem;
-                margin: 2rem;
+                margin-bottom: 2rem;
                 div{
                     #comentario{
                         margin-bottom: 1rem;
                         max-width: 99%;
-                        transition: border 0.5s;
-                        &:hover{
-                            border-radius: $borde*2;
-                            border:$borde solid $colorBorder; 
+                        transition: border-radius 0.2s;
+                        &:focus{
+                            border-radius: $borde*8;
                         }
+                    }
+                    label{
+                        margin-top: 0.5rem;
+                        margin-bottom: 0.25rem;
+                    }
+                    input{
+                        margin: 0.5rem;
                     }
                 }
             }
         }
         .textoMaiz{
-            padding: 0.5rem;
+            background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);   
+            padding: 2rem;
             margin-bottom: 0.5rem;
-            border-top: $borde solid $colorBorder;
             div{
                 display: flex;
                 img{
-                    max-width: 10%;
+                    max-height: 30vh;
                 }
     
             }
         }
         .apoyo{
-            padding: 1rem;
-            border-top: $borde solid $colorBorder;
+            padding: 2rem;
             div{
                 display: flex;
                 img{
-                    max-width: 10%;
+                    max-height: 30vh;
                 }
-    
             }
         }
         div{

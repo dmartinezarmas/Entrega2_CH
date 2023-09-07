@@ -3,54 +3,82 @@ body{
         .gridPaginaError{
             display: grid;
             margin: 1rem;
-            grid-template-rows: repeat(4, 1fr);
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr) 0.5fr 0.25fr;
+            grid-template-columns: 1fr repeat(2, 0.5fr) 1fr;
             grid-template-areas:
             "titulo titulo titulo titulo"
             "uno img img dos"
             "uno img img dos"
-            "tres tres cuatro cuatro";
+            "tres tres tres tres"
+            "cuatro cuatro cuatro cuatro" ;
             .tituloPaginaError{
                 grid-area: titulo;
+                margin: 1rem;
                 text-align: center;
+                span{
+                    color: rgb(199, 0, 0);
+                    text-decoration:underline;
+                }
             }
             .unoPaginaError{
                 grid-area: uno;
-                font-size: large;
+                margin-right: 1rem;
+                margin-left: 3rem;
+                font-size: 1.5rem;
                 font-weight: bold;
-                color: green;
+                text-align:right ;
             }
             .dosPaginaError{
-                text-align: end;
+                text-align: left;
+                margin-left: 1rem;
+                margin-right: 3rem;
                 grid-area: dos;
-                font-size: large;
+                font-size: 1.5rem;
                 font-weight: bold;
-                color: rgb(197, 0, 0);
             }
             .tresPaginaError{
                 grid-area: tres;
+                margin-top: 5rem;
                 text-align: center;
-                font-size: large;
+                font-size: 1.5rem;
                 font-weight: bold;
-                color: rgb(255, 255, 255);
             }
             .cuatroPaginaError{
                 grid-area: cuatro;
                 text-align: center;
-                font-size: large;
+                font-size: 1.5rem;
                 font-weight: bold;
-                color: rgb(255, 255, 255);
             }
             .imagenPaginaError{
                 grid-area: img;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 img{
-                    width: 80%;
-                    transition: transform 0.5s;
+                    min-width: 20rem;
+                    transition: transform 1.5s;
                     &:hover{
-                        transform: scale(1.8, 1.8);
+                        transform: rotateY(360deg) scale(1.4, 1.4);
                     }
                 }
             }
+        }
+    }
+}
+@media screen and (max-width: 750px){
+/* ESTILOS PARA PAGINA 404 */
+    .gridPaginaError{
+        display: flex !important;
+        flex-direction: column;
+        text-align: center;
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem !important;
+            color: rgb(87, 87, 87);
+            margin: 0;
+            padding: 0;
         }
     }
 }

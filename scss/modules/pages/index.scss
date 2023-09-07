@@ -1,16 +1,5 @@
 body{
     overflow-x: hidden;
-    header{
-        nav{
-            div{
-                #textoHeader{
-                    background: linear-gradient(to right, green,white,red);
-                    -webkit-background-clip: text;
-                    color: transparent;
-                }
-            }
-        }
-    }
     main{
         #principal{
             height: 70%;
@@ -24,19 +13,38 @@ body{
             #title{
                 div{
                     display: flex;
+                    p{
+                        padding: 0.5rem;
+                    }
                 }
                 img{
-                    max-width: 10%;
+                    min-width: 10rem;
+                    transition: transform 1.5s;
+                    &:hover{
+                        transform: rotatex(180deg);
+                    }
                 }
                 h1{
                     font-weight: bolder;
                 }
             }
             #section1{
+                max-width: 48vw;
                 a{
                     img{
-                        max-width: 60%;
+                        max-width: 90%;
+                        margin-bottom: 2rem;
+                        transition: transform 2.5s;
+                        &:hover{
+                            transform:rotateY(180deg);
+                        }
                     }
+                }
+            }
+            #section2{
+                max-width: 48vw;
+                video{
+                    max-width: 90%;
                 }
             }
         }
